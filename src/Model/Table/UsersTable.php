@@ -38,7 +38,7 @@ class UsersTable extends Table
         $this->addBehavior('Acl.Acl', ['type' => 'requester']);
 
         $this->setTable('users');
-        $this->setDisplayField('id');
+        $this->setDisplayField('username');
         $this->setPrimaryKey('id');
 
         $this->addBehavior('Timestamp');

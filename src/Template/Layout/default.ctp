@@ -13,7 +13,7 @@
  * @license       https://opensource.org/licenses/mit-license.php MIT License
  */
 
-$cakeDescription = 'CakePHP: the rapid development php framework';
+$cakeDescription = 'ADECO - Plataforma de Producción';
 ?>
 <!DOCTYPE html>
 <html>
@@ -22,16 +22,12 @@ $cakeDescription = 'CakePHP: the rapid development php framework';
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>
         <?= $cakeDescription ?>:
-        <?= $this->fetch('title') ?>
+        <?= $this->fetch("The ADECO's platform") ?>
     </title>
     <?= $this->Html->meta('icon') ?>
-
-    <?= $this->Html->css('base.css') ?>
-    <?= $this->Html->css('cake.css') ?>
-
-    <?= $this->fetch('meta') ?>
-    <?= $this->fetch('css') ?>
-    <?= $this->fetch('script') ?>
+    <?= $this->Html->css(['bootstrap','font-awesome','base', 'cake']) ?>
+    <?= $this->Html->script(['jquery.min']) ?>
+    
 </head>
 <body>
     <nav class="top-bar expanded" data-topbar role="navigation">
@@ -53,5 +49,6 @@ $cakeDescription = 'CakePHP: the rapid development php framework';
     </div>
     <footer>
     </footer>
+    <?= $this->Html->script(['bootstrap.min','custom']) ?>    
 </body>
 </html>

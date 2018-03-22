@@ -1,0 +1,22 @@
+2018-03-22 20:03:10 Notice: {
+    "id": 1,
+    "group_id": 1,
+    "role_id": 1,
+    "username": "jalegre",
+    "nombre": "Javier Alegre",
+    "ruta_imagen": "user1.jpg",
+    "email": "javieralegre2003@hotmail.com",
+    "created": "2018-02-16T09:19:46+00:00",
+    "modified": "2018-02-16T17:53:28+00:00"
+}
+2018-03-22 20:10:39 Notice: {
+    "id": 1,
+    "group_id": 1,
+    "role_id": 1,
+    "username": "jalegre",
+    "nombre": "Javier Alegre",
+    "ruta_imagen": "user1.jpg",
+    "email": "javieralegre2003@hotmail.com",
+    "created": "2018-02-16T09:19:46+00:00",
+    "modified": "2018-02-16T17:53:28+00:00"
+}
