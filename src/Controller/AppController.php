@@ -93,8 +93,8 @@ class AppController extends Controller {
             ],
             'loginRedirect' => [
                 'plugin' => false,
-                'controller' => 'Posts',
-                'action' => 'index'
+                'controller' => 'Inicios',
+                'action' => 'inicio'
             ],
             'logoutRedirect' => [
                 'plugin' => false,

@@ -69,6 +69,8 @@ class AclController extends AppController {
         $this->AclExtras = new AclExtras();
         $this->AclExtras->startup($this);
         
+        
+        
         /**
          * Loading required Model
          */
@@ -103,6 +105,7 @@ class AclController extends AppController {
     public function index() {
         $manage = Configure::read('AclManager.aros');
         $this->set(compact('manage'));
+        $this->viewBuilder()->setLayout('aclmanager');        
     }
 
     /**
