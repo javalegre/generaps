@@ -1,0 +1,12 @@
+<?php
+$baseDir = dirname(dirname(__FILE__));
+return [
+    'plugins' => [
+        'Acl' => $baseDir . '/vendor/cakephp/acl/',
+        'AclManager' => $baseDir . '/vendor/ivanamat/cakephp3-aclmanager/',
+        'Bake' => $baseDir . '/vendor/cakephp/bake/',
+        'DebugKit' => $baseDir . '/vendor/cakephp/debug_kit/',
+        'Migrations' => $baseDir . '/vendor/cakephp/migrations/',
+        'WyriHaximus/TwigView' => $baseDir . '/vendor/wyrihaximus/twig-view/'
+    ]
+];
