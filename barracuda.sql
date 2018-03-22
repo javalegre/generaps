@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1:3306
--- Tiempo de generación: 22-03-2018 a las 17:11:22
+-- Tiempo de generación: 22-03-2018 a las 18:32:58
 -- Versión del servidor: 5.7.19
 -- Versión de PHP: 7.1.9
 
@@ -1106,6 +1106,21 @@ INSERT INTO `sistema_laboreos` (`id`, `nombre`) VALUES
 -- --------------------------------------------------------
 
 --
+-- Estructura de tabla para la tabla `tecnicaresponsables`
+--
+
+DROP TABLE IF EXISTS `tecnicaresponsables`;
+CREATE TABLE IF NOT EXISTS `tecnicaresponsables` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `user_id` int(11) DEFAULT NULL,
+  `es_responsable` int(11) DEFAULT NULL,
+  `tecnica_id` int(11) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+
+-- --------------------------------------------------------
+
+--
 -- Estructura de tabla para la tabla `tecnicas`
 --
 
@@ -1140,21 +1155,6 @@ CREATE TABLE IF NOT EXISTS `tecnicas` (
   `modified` date DEFAULT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-
--- --------------------------------------------------------
-
---
--- Estructura de tabla para la tabla `tecnica_responsables`
---
-
-DROP TABLE IF EXISTS `tecnica_responsables`;
-CREATE TABLE IF NOT EXISTS `tecnica_responsables` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
-  `user_id` int(11) DEFAULT NULL,
-  `is_responsable` int(11) DEFAULT NULL,
-  `tecnica_id` int(11) DEFAULT NULL,
-  PRIMARY KEY (`id`)
-) ENGINE=MyISAM DEFAULT CHARSET=latin1;
 
 -- --------------------------------------------------------
 
