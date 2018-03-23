@@ -2,7 +2,7 @@
                     <div class="animate form login_form">
                         <section class="login_content">
                             <div class="login-box">
-                                <div class="card card-login mx-auto mt-5">
+                                <div class="card card-login">
                                     <div class="card-header">ADECO - Control de Acceso</div>
                                         <div class="card-body">
                                             <?= $this->Form->create() ?>
