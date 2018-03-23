@@ -2,7 +2,7 @@
     <div class="col-md-3 left_col">
         <div class="left_col scroll-view">
             <div class="navbar nav_title" style="border: 0;">
-                <a href="<?= $this->Url->build('/')?>" class="site_title"><span><?= '  Adecoagro STG' ?></span></a>
+                <a href="<?= $this->Url->build('/')?>" class="site_title"><span><?= '  The Platform' ?></span></a>
             </div>
 
             <div class="clearfix"></div>
@@ -10,7 +10,7 @@
 
 
             <!-- Sidebar user panel -->
-            <?php echo $this->element('aside/user-panel'); ?>
+<!--            < ?php echo $this->element('aside/user-panel'); ?>-->
 
             <br />
             <!-- sidebar menu: : style can be found in sidebar.less -->

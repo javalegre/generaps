@@ -9,7 +9,7 @@
                     <li class="">
                         <a href="javascript:;" class="user-profile dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
                             <?= $this->Html->image($this->request->session()->read('Auth.User.ruta_imagen'))?>
-                            <?= $this->request->session()->read('Auth.User.nombre') ?>
+                            <?= $this->request->session()->read('Auth.User.username') ?>
                             <span class=" fa fa-angle-down"></span>
                         </a>
                         <ul class="dropdown-menu dropdown-usermenu pull-right">

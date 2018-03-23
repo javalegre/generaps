@@ -1,4 +1,8 @@
-
+  		<div class="login_wrapper">
+                    <div class="animate form login_form">
+                        <section class="login_content">
+                            <div class="login-box">
+                                <div class="card card-login mx-auto mt-5">
                                     <div class="card-header">ADECO - Control de Acceso</div>
                                         <div class="card-body">
                                             <?= $this->Form->create() ?>
@@ -14,4 +18,8 @@
                                             <?= $this->Form->end() ?>
                                         </div>
                                     <div><?= $this->Flash->render('auth') ?></div>
-  
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+		</div>

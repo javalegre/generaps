@@ -119,5 +119,14 @@ class UsersController extends AppController {
             }
         }
     }
+    
+    public function logout()
+    {
+        $this->autoRender = true;      
+        
+//        $this->Flash->success('Ha salido del sistema.');
+
+        return $this->redirect($this->Auth->logout());
+    }
 
 }
