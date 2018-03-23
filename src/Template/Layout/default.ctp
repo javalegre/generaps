@@ -12,7 +12,7 @@
     <?= $this->Html->script(['jquery.min']) ?>
     
 </head>
-<body class="nav-md footer_fixed_menu_fixed">
+<body class="nav-md footer_fixed menu_fixed">
     <div class="container body">
         <div class="main_container">
 
