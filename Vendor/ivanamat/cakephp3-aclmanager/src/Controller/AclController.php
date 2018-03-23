@@ -69,7 +69,7 @@ class AclController extends AppController {
         $this->AclExtras = new AclExtras();
         $this->AclExtras->startup($this);
         
-        
+        $this->viewBuilder()->setLayout('aclmanager');  
         
         /**
          * Loading required Model
@@ -364,7 +364,7 @@ class AclController extends AppController {
      * Recursive function to find permissions avoiding slow $this->Acl->check().
      */
     private function _evaluate_permissions($permKeys, $aro, $aco, $aco_index) {
-
+        
         $this->acoId = $aco['Aco']['id'];
         $result = $this->Acl->Aro->find('all', [
                     'contain' => ['Permissions' => function ($q) {
