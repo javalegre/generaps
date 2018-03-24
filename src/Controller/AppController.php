@@ -13,40 +13,6 @@
  * @since     0.2.9
  * @license   https://opensource.org/licenses/mit-license.php MIT License
  */
-
-//holaaaa
-/* avisa pues mago - no andaaaaa ---------------------------------ppppppppppppppppppp---------------*/
-
-
-
-
-
-
-
-
-
-
-
-/*
-kjhjk
-*/
-
-//pppppppppppppp
-
-
-
-
-
-
-
-
-
-
-
-
-
-//eso que paso recien es porque ambos editamos la misma linea pero ahi anda
-//hola desde aqui................-.-.--.
 namespace App\Controller;
 
 use Cake\Controller\Controller;
@@ -112,6 +78,7 @@ class AppController extends Controller {
             ]
         ]);
 //        $this->Auth->allow();
+//        $this->Auth->
         /*
          * Enable the following components for recommended CakePHP security settings.
          * see https://book.cakephp.org/3.0/en/controllers/components/security.html
