@@ -365,6 +365,8 @@ class AclController extends AppController {
      */
     private function _evaluate_permissions($permKeys, $aro, $aco, $aco_index) {
         
+     
+        
         $this->acoId = $aco['Aco']['id'];
         $result = $this->Acl->Aro->find('all', [
                     'contain' => ['Permissions' => function ($q) {
@@ -377,6 +379,8 @@ class AclController extends AppController {
                             ]
                         ])->toArray();
 
+//        die(debug($result));
+        
         $permissions = array_shift($result);
         $permissions = array_shift($permissions->permissions);
 

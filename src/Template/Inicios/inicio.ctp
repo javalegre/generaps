@@ -40,6 +40,14 @@
 </div>
 <!-- /top tiles -->
 
+//<?php 
+
+echo $this->AclManager->check('5','Campanias','add');
+
+//    die(debug($this->AclManager));  
+//    
+//    ?>
+
 <div class="row">
 
 

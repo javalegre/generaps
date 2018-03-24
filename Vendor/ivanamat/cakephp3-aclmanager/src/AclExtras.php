@@ -187,7 +187,7 @@ class AclExtras
             $this->_processControllers($root);
             $this->_processPrefixes($root);
             $this->_processPlugins($root, $plugins);
-            // debug($this->foundACOs);
+             debug($this->foundACOs);
         } else {
             $plugin = $params['plugin'];
             if (!Plugin::loaded($plugin)) {

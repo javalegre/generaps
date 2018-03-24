@@ -22,7 +22,15 @@ use Cake\ORM\Entity;
  * @property \App\Model\Entity\Role $role
  */
 class User extends Entity {
+    
+    /* Para poder encriptar el password */
+    protected function _setPassword($value) {
+        if (strlen($value)){
+            $hasher = new DefaultPasswordHasher();
 
+            return $hasher->hash($value);
+        }
+    }
     /**
      * Fields that can be mass assigned using newEntity() or patchEntity().
      *
