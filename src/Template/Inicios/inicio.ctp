@@ -40,13 +40,24 @@
 </div>
 <!-- /top tiles -->
 
-//<?php
-
-// echo $this->Acl->check('5','Campanias','add');
-
+<?php
+    //$p = $this->Acl->check('5','Campanias','update');
+    //echo $p;
+    //echo $this->Acl->check($aro, $aco, $action);.
+  //  $p = $this->Acl->check('5','Campanias','Add');
+//    if ($this->Acl->check('5','Campanias','Add')){
+//        echo 'hola';
+//    }else{
+//        echo 'chau';
+//    }
+//   if($app->checkaccess(1)){
+//       echo 'si';
+//   } else {
+//       echo 'no';
+//   }
 //    die(debug($this->AclManager));
 //
-//    ?>
+    ?>
 
 <div class="row">
 

@@ -1,62 +1,51 @@
 <?php
+    namespace App\View\Helper;
 
-/* 
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-namespace Acl\View\Helper;
+    use Acl\Auth\ActionsAuthorize;
+    use Acl\Controller\Component\AclComponent;
+    use Cake\Controller\ComponentRegistry;
+    use Cake\Routing\Router;
+    use Cake\View\Helper;
+    use Cake\View\View;
 
-use Acl\Auth\ActionsAuthorize;
-use Acl\Controller\Component\AclComponent;
-use Cake\Controller\ComponentRegistry;
-use Cake\Network\Request;
-use Cake\Routing\Router;
-use Cake\View\Helper;
-use Cake\View\View;
 
 class AclHelper extends Helper
-{
 
+{
     /**
      * Helpers used.
      *
      * @var array
      */
     public $helpers = ['Html'];
-
     /**
      * Acl Instance.
      *
      * @var object
      */
     public $Acl;
-
     /**
      * ActionsAuthorize Instance.
      *
      * @var object
      */
     public $Authorize;
-
     /**
      * Construct method.
      *
      * @param \Cake\View\View $view The view that was fired.
      * @param array $config The config passed to the class.
      */
-    public function __construct(View $view, $config = [])
+    public function __construct(View $view, $config=[])
     {
         parent::__construct($view, $config);
-
+        
         $collection = new ComponentRegistry();
         $this->Acl = new AclComponent($collection);
-
-
         $this->Authorize = new ActionsAuthorize($collection);
         $this->Authorize->config($this->config());
     }
-
+    
     /**
      * Check if the user can access to the given URL.
      *
@@ -66,25 +55,21 @@ class AclHelper extends Helper
      */
     public function check(array $params = [])
     {
+        $collection = new ComponentRegistry();
+        $this->Acl = new AclComponent($collection);
+        
         if (!$this->request->session()->read('Auth.User')) {
+            /* No estoy logueado, por eso salgo nomas */
             return false;
         }
-
-        $params += ['_base' => false];
-
-        $url = Router::url($params);
-        $params = Router::parse($url);
-
+        $aco = $params['controller'];
+        //$user = $this->request->session()->read('Auth.User');
         $user = [$this->Authorize->config('userModel') => $this->request->session()->read('Auth.User')];
-
-        $request = new Request();
-        $request->addParams($params);
-
-        $action = $this->Authorize->action($request);
-
-        return $this->Acl->check($user, $action);
+        
+        $action = $params['action'];
+        
+        return $this->Acl->check($user, $aco, $action);
     }
-
     /**
      * Generate the link only if the user has access to the given url.
      *
@@ -95,14 +80,12 @@ class AclHelper extends Helper
      *
      * @return string
      */
-    public function link($title, $url = null, array $options = [])
-    {
-        if (!$this->check($url)) {
-            return '';
-        }
-
-        return $this->Html->link($title, $url, $options);
-    }
+//    public function link($title, $url = null, array $options = [])
+//    {
+//        if (!$this->check($url)) {
+//            return '';
+//        }
+//        return $this->Html->link($title, $url, $options);
+//    }
+//}
 }
-
-?>

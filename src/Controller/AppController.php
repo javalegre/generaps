@@ -77,7 +77,7 @@ class AppController extends Controller {
                 'element' => 'error'
             ]
         ]);
-        $this->Auth->allow();
+//        $this->Auth->allow();
 //        $this->Auth->
         /*
          * Enable the following components for recommended CakePHP security settings.
@@ -87,5 +87,16 @@ class AppController extends Controller {
         //$this->loadComponent('Csrf');
     }
 
+    public function beforeRender(Event $event)
+    {
+        /* Para el Helper, el que me ayuda a saber si puedo o no acceder a un recurso */
+        parent::beforeRender($event);
 
+        if ($this->components()->has('Auth')) {
+            $builder = $this->viewBuilder();
+            $builder->helpers([
+                'Acl' => $this->Auth->config('authorize')['Acl.Actions']
+            ]);
+        }
+    }
 }

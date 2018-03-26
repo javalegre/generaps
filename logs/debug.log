@@ -1,34 +1,14 @@
-2018-03-22 20:03:10 Notice: {
-    "id": 1,
-    "group_id": 1,
-    "role_id": 1,
-    "username": "jalegre",
-    "nombre": "Javier Alegre",
-    "ruta_imagen": "user1.jpg",
-    "email": "javieralegre2003@hotmail.com",
-    "created": "2018-02-16T09:19:46+00:00",
-    "modified": "2018-02-16T17:53:28+00:00"
-}
-2018-03-22 20:10:39 Notice: {
-    "id": 1,
-    "group_id": 1,
-    "role_id": 1,
-    "username": "jalegre",
-    "nombre": "Javier Alegre",
-    "ruta_imagen": "user1.jpg",
-    "email": "javieralegre2003@hotmail.com",
-    "created": "2018-02-16T09:19:46+00:00",
-    "modified": "2018-02-16T17:53:28+00:00"
-}
-2018-03-26 13:14:09 Notice: Notice (8): Array to string conversion in [C:\Plataforma\Vendor\ivanamat\cakephp3-aclmanager\src\Controller\AclController.php, line 88]
-Request URL: /admin/AclManager
+2018-03-26 14:33:33 Notice: Notice (1024): ACO permissions key edit does not exist in DbAcl::check() in [C:\Plataforma\Vendor\cakephp\acl\src\Model\Table\PermissionsTable.php, line 98]
+Request URL: /
 Trace:
 Cake\Error\BaseErrorHandler::handleError() - ROOT\Vendor\cakephp\cakephp\src\Error\BaseErrorHandler.php, line 153
-AclManager\Controller\AclController::initialize() - ROOT\Vendor\ivanamat\cakephp3-aclmanager\src\Controller\AclController.php, line 88
-Cake\Controller\Controller::__construct() - ROOT\Vendor\cakephp\cakephp\src\Controller\Controller.php, line 263
-ReflectionClass::newInstance() - [internal], line ??
-Cake\Http\ControllerFactory::create() - ROOT\Vendor\cakephp\cakephp\src\Http\ControllerFactory.php, line 45
-Cake\Http\ActionDispatcher::dispatch() - ROOT\Vendor\cakephp\cakephp\src\Http\ActionDispatcher.php, line 90
+Acl\Model\Table\PermissionsTable::check() - ROOT\Vendor\cakephp\acl\src\Model\Table\PermissionsTable.php, line 98
+Acl\Adapter\DbAcl::check() - ROOT\Vendor\cakephp\acl\src\Adapter\DbAcl.php, line 80
+Acl\Controller\Component\AclComponent::check() - ROOT\Vendor\cakephp\acl\src\Controller\Component\AclComponent.php, line 123
+App\Controller\IniciosController::inicio() - APP/Controller\IniciosController.php, line 15
+Cake\Controller\Controller::invokeAction() - ROOT\Vendor\cakephp\cakephp\src\Controller\Controller.php, line 440
+Cake\Http\ActionDispatcher::_invoke() - ROOT\Vendor\cakephp\cakephp\src\Http\ActionDispatcher.php, line 119
+Cake\Http\ActionDispatcher::dispatch() - ROOT\Vendor\cakephp\cakephp\src\Http\ActionDispatcher.php, line 93
 Cake\Http\BaseApplication::__invoke() - ROOT\Vendor\cakephp\cakephp\src\Http\BaseApplication.php, line 108
 Cake\Http\Runner::__invoke() - ROOT\Vendor\cakephp\cakephp\src\Http\Runner.php, line 65
 Cake\Routing\Middleware\RoutingMiddleware::__invoke() - ROOT\Vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php, line 104
@@ -45,7 +25,776 @@ Cake\Http\Server::run() - ROOT\Vendor\cakephp\cakephp\src\Http\Server.php, line 
 
 
 
-2018-03-26 13:28:13 Notice: {
+2018-03-26 14:37:33 Notice: Notice (1024): ACO permissions key edit does not exist in DbAcl::check() in [C:\Plataforma\Vendor\cakephp\acl\src\Model\Table\PermissionsTable.php, line 98]
+Request URL: /
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - ROOT\Vendor\cakephp\cakephp\src\Error\BaseErrorHandler.php, line 153
+Acl\Model\Table\PermissionsTable::check() - ROOT\Vendor\cakephp\acl\src\Model\Table\PermissionsTable.php, line 98
+Acl\Adapter\DbAcl::check() - ROOT\Vendor\cakephp\acl\src\Adapter\DbAcl.php, line 80
+Acl\Controller\Component\AclComponent::check() - ROOT\Vendor\cakephp\acl\src\Controller\Component\AclComponent.php, line 123
+App\Controller\IniciosController::inicio() - APP/Controller\IniciosController.php, line 15
+Cake\Controller\Controller::invokeAction() - ROOT\Vendor\cakephp\cakephp\src\Controller\Controller.php, line 440
+Cake\Http\ActionDispatcher::_invoke() - ROOT\Vendor\cakephp\cakephp\src\Http\ActionDispatcher.php, line 119
+Cake\Http\ActionDispatcher::dispatch() - ROOT\Vendor\cakephp\cakephp\src\Http\ActionDispatcher.php, line 93
+Cake\Http\BaseApplication::__invoke() - ROOT\Vendor\cakephp\cakephp\src\Http\BaseApplication.php, line 108
+Cake\Http\Runner::__invoke() - ROOT\Vendor\cakephp\cakephp\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\RoutingMiddleware::__invoke() - ROOT\Vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php, line 104
+Cake\Http\Runner::__invoke() - ROOT\Vendor\cakephp\cakephp\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\AssetMiddleware::__invoke() - ROOT\Vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php, line 88
+Cake\Http\Runner::__invoke() - ROOT\Vendor\cakephp\cakephp\src\Http\Runner.php, line 65
+Cake\Error\Middleware\ErrorHandlerMiddleware::__invoke() - ROOT\Vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php, line 98
+Cake\Http\Runner::__invoke() - ROOT\Vendor\cakephp\cakephp\src\Http\Runner.php, line 65
+DebugKit\Middleware\DebugKitMiddleware::__invoke() - ROOT\Vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php, line 52
+Cake\Http\Runner::__invoke() - ROOT\Vendor\cakephp\cakephp\src\Http\Runner.php, line 65
+Cake\Http\Runner::run() - ROOT\Vendor\cakephp\cakephp\src\Http\Runner.php, line 51
+Cake\Http\Server::run() - ROOT\Vendor\cakephp\cakephp\src\Http\Server.php, line 81
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2018-03-26 14:37:48 Notice: Notice (1024): ACO permissions key edit does not exist in DbAcl::check() in [C:\Plataforma\Vendor\cakephp\acl\src\Model\Table\PermissionsTable.php, line 98]
+Request URL: /
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - ROOT\Vendor\cakephp\cakephp\src\Error\BaseErrorHandler.php, line 153
+Acl\Model\Table\PermissionsTable::check() - ROOT\Vendor\cakephp\acl\src\Model\Table\PermissionsTable.php, line 98
+Acl\Adapter\DbAcl::check() - ROOT\Vendor\cakephp\acl\src\Adapter\DbAcl.php, line 80
+Acl\Controller\Component\AclComponent::check() - ROOT\Vendor\cakephp\acl\src\Controller\Component\AclComponent.php, line 123
+App\Controller\IniciosController::inicio() - APP/Controller\IniciosController.php, line 15
+Cake\Controller\Controller::invokeAction() - ROOT\Vendor\cakephp\cakephp\src\Controller\Controller.php, line 440
+Cake\Http\ActionDispatcher::_invoke() - ROOT\Vendor\cakephp\cakephp\src\Http\ActionDispatcher.php, line 119
+Cake\Http\ActionDispatcher::dispatch() - ROOT\Vendor\cakephp\cakephp\src\Http\ActionDispatcher.php, line 93
+Cake\Http\BaseApplication::__invoke() - ROOT\Vendor\cakephp\cakephp\src\Http\BaseApplication.php, line 108
+Cake\Http\Runner::__invoke() - ROOT\Vendor\cakephp\cakephp\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\RoutingMiddleware::__invoke() - ROOT\Vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php, line 104
+Cake\Http\Runner::__invoke() - ROOT\Vendor\cakephp\cakephp\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\AssetMiddleware::__invoke() - ROOT\Vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php, line 88
+Cake\Http\Runner::__invoke() - ROOT\Vendor\cakephp\cakephp\src\Http\Runner.php, line 65
+Cake\Error\Middleware\ErrorHandlerMiddleware::__invoke() - ROOT\Vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php, line 98
+Cake\Http\Runner::__invoke() - ROOT\Vendor\cakephp\cakephp\src\Http\Runner.php, line 65
+DebugKit\Middleware\DebugKitMiddleware::__invoke() - ROOT\Vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php, line 52
+Cake\Http\Runner::__invoke() - ROOT\Vendor\cakephp\cakephp\src\Http\Runner.php, line 65
+Cake\Http\Runner::run() - ROOT\Vendor\cakephp\cakephp\src\Http\Runner.php, line 51
+Cake\Http\Server::run() - ROOT\Vendor\cakephp\cakephp\src\Http\Server.php, line 81
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2018-03-26 14:38:13 Notice: Notice (1024): ACO permissions key edit does not exist in DbAcl::check() in [C:\Plataforma\Vendor\cakephp\acl\src\Model\Table\PermissionsTable.php, line 98]
+Request URL: /
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - ROOT\Vendor\cakephp\cakephp\src\Error\BaseErrorHandler.php, line 153
+Acl\Model\Table\PermissionsTable::check() - ROOT\Vendor\cakephp\acl\src\Model\Table\PermissionsTable.php, line 98
+Acl\Adapter\DbAcl::check() - ROOT\Vendor\cakephp\acl\src\Adapter\DbAcl.php, line 80
+Acl\Controller\Component\AclComponent::check() - ROOT\Vendor\cakephp\acl\src\Controller\Component\AclComponent.php, line 123
+App\Controller\IniciosController::inicio() - APP/Controller\IniciosController.php, line 15
+Cake\Controller\Controller::invokeAction() - ROOT\Vendor\cakephp\cakephp\src\Controller\Controller.php, line 440
+Cake\Http\ActionDispatcher::_invoke() - ROOT\Vendor\cakephp\cakephp\src\Http\ActionDispatcher.php, line 119
+Cake\Http\ActionDispatcher::dispatch() - ROOT\Vendor\cakephp\cakephp\src\Http\ActionDispatcher.php, line 93
+Cake\Http\BaseApplication::__invoke() - ROOT\Vendor\cakephp\cakephp\src\Http\BaseApplication.php, line 108
+Cake\Http\Runner::__invoke() - ROOT\Vendor\cakephp\cakephp\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\RoutingMiddleware::__invoke() - ROOT\Vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php, line 104
+Cake\Http\Runner::__invoke() - ROOT\Vendor\cakephp\cakephp\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\AssetMiddleware::__invoke() - ROOT\Vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php, line 88
+Cake\Http\Runner::__invoke() - ROOT\Vendor\cakephp\cakephp\src\Http\Runner.php, line 65
+Cake\Error\Middleware\ErrorHandlerMiddleware::__invoke() - ROOT\Vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php, line 98
+Cake\Http\Runner::__invoke() - ROOT\Vendor\cakephp\cakephp\src\Http\Runner.php, line 65
+DebugKit\Middleware\DebugKitMiddleware::__invoke() - ROOT\Vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php, line 52
+Cake\Http\Runner::__invoke() - ROOT\Vendor\cakephp\cakephp\src\Http\Runner.php, line 65
+Cake\Http\Runner::run() - ROOT\Vendor\cakephp\cakephp\src\Http\Runner.php, line 51
+Cake\Http\Server::run() - ROOT\Vendor\cakephp\cakephp\src\Http\Server.php, line 81
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2018-03-26 14:41:31 Notice: Notice (1024): ACO permissions key edit does not exist in DbAcl::check() in [C:\Plataforma\Vendor\cakephp\acl\src\Model\Table\PermissionsTable.php, line 98]
+Request URL: /
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - ROOT\Vendor\cakephp\cakephp\src\Error\BaseErrorHandler.php, line 153
+Acl\Model\Table\PermissionsTable::check() - ROOT\Vendor\cakephp\acl\src\Model\Table\PermissionsTable.php, line 98
+Acl\Adapter\DbAcl::check() - ROOT\Vendor\cakephp\acl\src\Adapter\DbAcl.php, line 80
+Acl\Controller\Component\AclComponent::check() - ROOT\Vendor\cakephp\acl\src\Controller\Component\AclComponent.php, line 120
+App\Controller\IniciosController::inicio() - APP/Controller\IniciosController.php, line 15
+Cake\Controller\Controller::invokeAction() - ROOT\Vendor\cakephp\cakephp\src\Controller\Controller.php, line 440
+Cake\Http\ActionDispatcher::_invoke() - ROOT\Vendor\cakephp\cakephp\src\Http\ActionDispatcher.php, line 119
+Cake\Http\ActionDispatcher::dispatch() - ROOT\Vendor\cakephp\cakephp\src\Http\ActionDispatcher.php, line 93
+Cake\Http\BaseApplication::__invoke() - ROOT\Vendor\cakephp\cakephp\src\Http\BaseApplication.php, line 108
+Cake\Http\Runner::__invoke() - ROOT\Vendor\cakephp\cakephp\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\RoutingMiddleware::__invoke() - ROOT\Vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php, line 104
+Cake\Http\Runner::__invoke() - ROOT\Vendor\cakephp\cakephp\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\AssetMiddleware::__invoke() - ROOT\Vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php, line 88
+Cake\Http\Runner::__invoke() - ROOT\Vendor\cakephp\cakephp\src\Http\Runner.php, line 65
+Cake\Error\Middleware\ErrorHandlerMiddleware::__invoke() - ROOT\Vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php, line 98
+Cake\Http\Runner::__invoke() - ROOT\Vendor\cakephp\cakephp\src\Http\Runner.php, line 65
+DebugKit\Middleware\DebugKitMiddleware::__invoke() - ROOT\Vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php, line 52
+Cake\Http\Runner::__invoke() - ROOT\Vendor\cakephp\cakephp\src\Http\Runner.php, line 65
+Cake\Http\Runner::run() - ROOT\Vendor\cakephp\cakephp\src\Http\Runner.php, line 51
+Cake\Http\Server::run() - ROOT\Vendor\cakephp\cakephp\src\Http\Server.php, line 81
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2018-03-26 14:42:41 Notice: Notice (8): Trying to get property of non-object in [C:\Plataforma\src\Controller\IniciosController.php, line 15]
+Request URL: /
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - ROOT\Vendor\cakephp\cakephp\src\Error\BaseErrorHandler.php, line 153
+App\Controller\IniciosController::inicio() - APP/Controller\IniciosController.php, line 15
+Cake\Controller\Controller::invokeAction() - ROOT\Vendor\cakephp\cakephp\src\Controller\Controller.php, line 440
+Cake\Http\ActionDispatcher::_invoke() - ROOT\Vendor\cakephp\cakephp\src\Http\ActionDispatcher.php, line 119
+Cake\Http\ActionDispatcher::dispatch() - ROOT\Vendor\cakephp\cakephp\src\Http\ActionDispatcher.php, line 93
+Cake\Http\BaseApplication::__invoke() - ROOT\Vendor\cakephp\cakephp\src\Http\BaseApplication.php, line 108
+Cake\Http\Runner::__invoke() - ROOT\Vendor\cakephp\cakephp\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\RoutingMiddleware::__invoke() - ROOT\Vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php, line 104
+Cake\Http\Runner::__invoke() - ROOT\Vendor\cakephp\cakephp\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\AssetMiddleware::__invoke() - ROOT\Vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php, line 88
+Cake\Http\Runner::__invoke() - ROOT\Vendor\cakephp\cakephp\src\Http\Runner.php, line 65
+Cake\Error\Middleware\ErrorHandlerMiddleware::__invoke() - ROOT\Vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php, line 98
+Cake\Http\Runner::__invoke() - ROOT\Vendor\cakephp\cakephp\src\Http\Runner.php, line 65
+DebugKit\Middleware\DebugKitMiddleware::__invoke() - ROOT\Vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php, line 52
+Cake\Http\Runner::__invoke() - ROOT\Vendor\cakephp\cakephp\src\Http\Runner.php, line 65
+Cake\Http\Runner::run() - ROOT\Vendor\cakephp\cakephp\src\Http\Runner.php, line 51
+Cake\Http\Server::run() - ROOT\Vendor\cakephp\cakephp\src\Http\Server.php, line 81
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2018-03-26 14:42:55 Notice: Notice (1024): ACO permissions key edit does not exist in DbAcl::check() in [C:\Plataforma\Vendor\cakephp\acl\src\Model\Table\PermissionsTable.php, line 98]
+Request URL: /
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - ROOT\Vendor\cakephp\cakephp\src\Error\BaseErrorHandler.php, line 153
+Acl\Model\Table\PermissionsTable::check() - ROOT\Vendor\cakephp\acl\src\Model\Table\PermissionsTable.php, line 98
+Acl\Adapter\DbAcl::check() - ROOT\Vendor\cakephp\acl\src\Adapter\DbAcl.php, line 80
+Acl\Controller\Component\AclComponent::check() - ROOT\Vendor\cakephp\acl\src\Controller\Component\AclComponent.php, line 120
+App\Controller\IniciosController::inicio() - APP/Controller\IniciosController.php, line 15
+Cake\Controller\Controller::invokeAction() - ROOT\Vendor\cakephp\cakephp\src\Controller\Controller.php, line 440
+Cake\Http\ActionDispatcher::_invoke() - ROOT\Vendor\cakephp\cakephp\src\Http\ActionDispatcher.php, line 119
+Cake\Http\ActionDispatcher::dispatch() - ROOT\Vendor\cakephp\cakephp\src\Http\ActionDispatcher.php, line 93
+Cake\Http\BaseApplication::__invoke() - ROOT\Vendor\cakephp\cakephp\src\Http\BaseApplication.php, line 108
+Cake\Http\Runner::__invoke() - ROOT\Vendor\cakephp\cakephp\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\RoutingMiddleware::__invoke() - ROOT\Vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php, line 104
+Cake\Http\Runner::__invoke() - ROOT\Vendor\cakephp\cakephp\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\AssetMiddleware::__invoke() - ROOT\Vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php, line 88
+Cake\Http\Runner::__invoke() - ROOT\Vendor\cakephp\cakephp\src\Http\Runner.php, line 65
+Cake\Error\Middleware\ErrorHandlerMiddleware::__invoke() - ROOT\Vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php, line 98
+Cake\Http\Runner::__invoke() - ROOT\Vendor\cakephp\cakephp\src\Http\Runner.php, line 65
+DebugKit\Middleware\DebugKitMiddleware::__invoke() - ROOT\Vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php, line 52
+Cake\Http\Runner::__invoke() - ROOT\Vendor\cakephp\cakephp\src\Http\Runner.php, line 65
+Cake\Http\Runner::run() - ROOT\Vendor\cakephp\cakephp\src\Http\Runner.php, line 51
+Cake\Http\Server::run() - ROOT\Vendor\cakephp\cakephp\src\Http\Server.php, line 81
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2018-03-26 14:46:18 Notice: Notice (8): Array to string conversion in [C:\Plataforma\Vendor\cakephp\acl\src\Model\Table\PermissionsTable.php, line 96]
+Request URL: /
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - ROOT\Vendor\cakephp\cakephp\src\Error\BaseErrorHandler.php, line 153
+Acl\Model\Table\PermissionsTable::check() - ROOT\Vendor\cakephp\acl\src\Model\Table\PermissionsTable.php, line 96
+Acl\Adapter\DbAcl::check() - ROOT\Vendor\cakephp\acl\src\Adapter\DbAcl.php, line 80
+Acl\Controller\Component\AclComponent::check() - ROOT\Vendor\cakephp\acl\src\Controller\Component\AclComponent.php, line 120
+App\Controller\IniciosController::inicio() - APP/Controller\IniciosController.php, line 15
+Cake\Controller\Controller::invokeAction() - ROOT\Vendor\cakephp\cakephp\src\Controller\Controller.php, line 440
+Cake\Http\ActionDispatcher::_invoke() - ROOT\Vendor\cakephp\cakephp\src\Http\ActionDispatcher.php, line 119
+Cake\Http\ActionDispatcher::dispatch() - ROOT\Vendor\cakephp\cakephp\src\Http\ActionDispatcher.php, line 93
+Cake\Http\BaseApplication::__invoke() - ROOT\Vendor\cakephp\cakephp\src\Http\BaseApplication.php, line 108
+Cake\Http\Runner::__invoke() - ROOT\Vendor\cakephp\cakephp\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\RoutingMiddleware::__invoke() - ROOT\Vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php, line 104
+Cake\Http\Runner::__invoke() - ROOT\Vendor\cakephp\cakephp\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\AssetMiddleware::__invoke() - ROOT\Vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php, line 88
+Cake\Http\Runner::__invoke() - ROOT\Vendor\cakephp\cakephp\src\Http\Runner.php, line 65
+Cake\Error\Middleware\ErrorHandlerMiddleware::__invoke() - ROOT\Vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php, line 98
+Cake\Http\Runner::__invoke() - ROOT\Vendor\cakephp\cakephp\src\Http\Runner.php, line 65
+DebugKit\Middleware\DebugKitMiddleware::__invoke() - ROOT\Vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php, line 52
+Cake\Http\Runner::__invoke() - ROOT\Vendor\cakephp\cakephp\src\Http\Runner.php, line 65
+Cake\Http\Runner::run() - ROOT\Vendor\cakephp\cakephp\src\Http\Runner.php, line 51
+Cake\Http\Server::run() - ROOT\Vendor\cakephp\cakephp\src\Http\Server.php, line 81
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2018-03-26 14:47:34 Notice: Notice (1024): ACO permissions key _update does not exist in DbAcl::check() in [C:\Plataforma\Vendor\cakephp\acl\src\Model\Table\PermissionsTable.php, line 98]
+Request URL: /
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - ROOT\Vendor\cakephp\cakephp\src\Error\BaseErrorHandler.php, line 153
+Acl\Model\Table\PermissionsTable::check() - ROOT\Vendor\cakephp\acl\src\Model\Table\PermissionsTable.php, line 98
+Acl\Adapter\DbAcl::check() - ROOT\Vendor\cakephp\acl\src\Adapter\DbAcl.php, line 80
+Acl\Controller\Component\AclComponent::check() - ROOT\Vendor\cakephp\acl\src\Controller\Component\AclComponent.php, line 120
+App\Controller\IniciosController::inicio() - APP/Controller\IniciosController.php, line 15
+Cake\Controller\Controller::invokeAction() - ROOT\Vendor\cakephp\cakephp\src\Controller\Controller.php, line 440
+Cake\Http\ActionDispatcher::_invoke() - ROOT\Vendor\cakephp\cakephp\src\Http\ActionDispatcher.php, line 119
+Cake\Http\ActionDispatcher::dispatch() - ROOT\Vendor\cakephp\cakephp\src\Http\ActionDispatcher.php, line 93
+Cake\Http\BaseApplication::__invoke() - ROOT\Vendor\cakephp\cakephp\src\Http\BaseApplication.php, line 108
+Cake\Http\Runner::__invoke() - ROOT\Vendor\cakephp\cakephp\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\RoutingMiddleware::__invoke() - ROOT\Vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php, line 104
+Cake\Http\Runner::__invoke() - ROOT\Vendor\cakephp\cakephp\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\AssetMiddleware::__invoke() - ROOT\Vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php, line 88
+Cake\Http\Runner::__invoke() - ROOT\Vendor\cakephp\cakephp\src\Http\Runner.php, line 65
+Cake\Error\Middleware\ErrorHandlerMiddleware::__invoke() - ROOT\Vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php, line 98
+Cake\Http\Runner::__invoke() - ROOT\Vendor\cakephp\cakephp\src\Http\Runner.php, line 65
+DebugKit\Middleware\DebugKitMiddleware::__invoke() - ROOT\Vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php, line 52
+Cake\Http\Runner::__invoke() - ROOT\Vendor\cakephp\cakephp\src\Http\Runner.php, line 65
+Cake\Http\Runner::run() - ROOT\Vendor\cakephp\cakephp\src\Http\Runner.php, line 51
+Cake\Http\Server::run() - ROOT\Vendor\cakephp\cakephp\src\Http\Server.php, line 81
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2018-03-26 17:54:11 Notice: Notice (8): Undefined variable: acl in [C:\Plataforma\src\Controller\IniciosController.php, line 14]
+Request URL: /
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - ROOT\Vendor\cakephp\cakephp\src\Error\BaseErrorHandler.php, line 153
+App\Controller\IniciosController::inicio() - APP/Controller\IniciosController.php, line 14
+Cake\Controller\Controller::invokeAction() - ROOT\Vendor\cakephp\cakephp\src\Controller\Controller.php, line 440
+Cake\Http\ActionDispatcher::_invoke() - ROOT\Vendor\cakephp\cakephp\src\Http\ActionDispatcher.php, line 119
+Cake\Http\ActionDispatcher::dispatch() - ROOT\Vendor\cakephp\cakephp\src\Http\ActionDispatcher.php, line 93
+Cake\Http\BaseApplication::__invoke() - ROOT\Vendor\cakephp\cakephp\src\Http\BaseApplication.php, line 108
+Cake\Http\Runner::__invoke() - ROOT\Vendor\cakephp\cakephp\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\RoutingMiddleware::__invoke() - ROOT\Vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php, line 104
+Cake\Http\Runner::__invoke() - ROOT\Vendor\cakephp\cakephp\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\AssetMiddleware::__invoke() - ROOT\Vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php, line 88
+Cake\Http\Runner::__invoke() - ROOT\Vendor\cakephp\cakephp\src\Http\Runner.php, line 65
+Cake\Error\Middleware\ErrorHandlerMiddleware::__invoke() - ROOT\Vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php, line 98
+Cake\Http\Runner::__invoke() - ROOT\Vendor\cakephp\cakephp\src\Http\Runner.php, line 65
+DebugKit\Middleware\DebugKitMiddleware::__invoke() - ROOT\Vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php, line 52
+Cake\Http\Runner::__invoke() - ROOT\Vendor\cakephp\cakephp\src\Http\Runner.php, line 65
+Cake\Http\Runner::run() - ROOT\Vendor\cakephp\cakephp\src\Http\Runner.php, line 51
+Cake\Http\Server::run() - ROOT\Vendor\cakephp\cakephp\src\Http\Server.php, line 81
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2018-03-26 18:08:33 Notice: Notice (8): Undefined variable: acl in [C:\Plataforma\src\Controller\IniciosController.php, line 14]
+Request URL: /
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - ROOT\Vendor\cakephp\cakephp\src\Error\BaseErrorHandler.php, line 153
+App\Controller\IniciosController::inicio() - APP/Controller\IniciosController.php, line 14
+Cake\Controller\Controller::invokeAction() - ROOT\Vendor\cakephp\cakephp\src\Controller\Controller.php, line 440
+Cake\Http\ActionDispatcher::_invoke() - ROOT\Vendor\cakephp\cakephp\src\Http\ActionDispatcher.php, line 119
+Cake\Http\ActionDispatcher::dispatch() - ROOT\Vendor\cakephp\cakephp\src\Http\ActionDispatcher.php, line 93
+Cake\Http\BaseApplication::__invoke() - ROOT\Vendor\cakephp\cakephp\src\Http\BaseApplication.php, line 108
+Cake\Http\Runner::__invoke() - ROOT\Vendor\cakephp\cakephp\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\RoutingMiddleware::__invoke() - ROOT\Vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php, line 104
+Cake\Http\Runner::__invoke() - ROOT\Vendor\cakephp\cakephp\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\AssetMiddleware::__invoke() - ROOT\Vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php, line 88
+Cake\Http\Runner::__invoke() - ROOT\Vendor\cakephp\cakephp\src\Http\Runner.php, line 65
+Cake\Error\Middleware\ErrorHandlerMiddleware::__invoke() - ROOT\Vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php, line 98
+Cake\Http\Runner::__invoke() - ROOT\Vendor\cakephp\cakephp\src\Http\Runner.php, line 65
+DebugKit\Middleware\DebugKitMiddleware::__invoke() - ROOT\Vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php, line 52
+Cake\Http\Runner::__invoke() - ROOT\Vendor\cakephp\cakephp\src\Http\Runner.php, line 65
+Cake\Http\Runner::run() - ROOT\Vendor\cakephp\cakephp\src\Http\Runner.php, line 51
+Cake\Http\Server::run() - ROOT\Vendor\cakephp\cakephp\src\Http\Server.php, line 81
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2018-03-26 18:23:19 Notice: Notice (8): Array to string conversion in [C:\Plataforma\src\View\Helper\AclHelper.php, line 72]
+Request URL: /
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - ROOT\Vendor\cakephp\cakephp\src\Error\BaseErrorHandler.php, line 153
+App\View\Helper\AclHelper::check() - APP/View\Helper\AclHelper.php, line 72
+include - APP/Template\Element\aside\sidebar-menu.ctp, line 6
+Cake\View\View::_evaluate() - ROOT\Vendor\cakephp\cakephp\src\View\View.php, line 1203
+Cake\View\View::_render() - ROOT\Vendor\cakephp\cakephp\src\View\View.php, line 1164
+Cake\View\View::_renderElement() - ROOT\Vendor\cakephp\cakephp\src\View\View.php, line 1561
+Cake\View\View::element() - ROOT\Vendor\cakephp\cakephp\src\View\View.php, line 675
+include - APP/Template\Element\aside-main-sidebar.ctp, line 17
+Cake\View\View::_evaluate() - ROOT\Vendor\cakephp\cakephp\src\View\View.php, line 1203
+Cake\View\View::_render() - ROOT\Vendor\cakephp\cakephp\src\View\View.php, line 1164
+Cake\View\View::_renderElement() - ROOT\Vendor\cakephp\cakephp\src\View\View.php, line 1561
+Cake\View\View::element() - ROOT\Vendor\cakephp\cakephp\src\View\View.php, line 675
+include - APP/Template\Layout\default.ctp, line 20
+Cake\View\View::_evaluate() - ROOT\Vendor\cakephp\cakephp\src\View\View.php, line 1203
+Cake\View\View::_render() - ROOT\Vendor\cakephp\cakephp\src\View\View.php, line 1164
+Cake\View\View::renderLayout() - ROOT\Vendor\cakephp\cakephp\src\View\View.php, line 819
+Cake\View\View::render() - ROOT\Vendor\cakephp\cakephp\src\View\View.php, line 777
+Cake\Controller\Controller::render() - ROOT\Vendor\cakephp\cakephp\src\Controller\Controller.php, line 623
+Cake\Http\ActionDispatcher::_invoke() - ROOT\Vendor\cakephp\cakephp\src\Http\ActionDispatcher.php, line 125
+Cake\Http\ActionDispatcher::dispatch() - ROOT\Vendor\cakephp\cakephp\src\Http\ActionDispatcher.php, line 93
+Cake\Http\BaseApplication::__invoke() - ROOT\Vendor\cakephp\cakephp\src\Http\BaseApplication.php, line 108
+Cake\Http\Runner::__invoke() - ROOT\Vendor\cakephp\cakephp\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\RoutingMiddleware::__invoke() - ROOT\Vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php, line 104
+Cake\Http\Runner::__invoke() - ROOT\Vendor\cakephp\cakephp\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\AssetMiddleware::__invoke() - ROOT\Vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php, line 88
+Cake\Http\Runner::__invoke() - ROOT\Vendor\cakephp\cakephp\src\Http\Runner.php, line 65
+Cake\Error\Middleware\ErrorHandlerMiddleware::__invoke() - ROOT\Vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php, line 98
+Cake\Http\Runner::__invoke() - ROOT\Vendor\cakephp\cakephp\src\Http\Runner.php, line 65
+DebugKit\Middleware\DebugKitMiddleware::__invoke() - ROOT\Vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php, line 52
+Cake\Http\Runner::__invoke() - ROOT\Vendor\cakephp\cakephp\src\Http\Runner.php, line 65
+Cake\Http\Runner::run() - ROOT\Vendor\cakephp\cakephp\src\Http\Runner.php, line 51
+Cake\Http\Server::run() - ROOT\Vendor\cakephp\cakephp\src\Http\Server.php, line 81
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2018-03-26 18:25:46 Notice: Notice (8): Array to string conversion in [C:\Plataforma\src\View\Helper\AclHelper.php, line 54]
+Request URL: /
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - ROOT\Vendor\cakephp\cakephp\src\Error\BaseErrorHandler.php, line 153
+App\View\Helper\AclHelper::check() - APP/View\Helper\AclHelper.php, line 54
+include - APP/Template\Element\aside\sidebar-menu.ctp, line 6
+Cake\View\View::_evaluate() - ROOT\Vendor\cakephp\cakephp\src\View\View.php, line 1203
+Cake\View\View::_render() - ROOT\Vendor\cakephp\cakephp\src\View\View.php, line 1164
+Cake\View\View::_renderElement() - ROOT\Vendor\cakephp\cakephp\src\View\View.php, line 1561
+Cake\View\View::element() - ROOT\Vendor\cakephp\cakephp\src\View\View.php, line 675
+include - APP/Template\Element\aside-main-sidebar.ctp, line 17
+Cake\View\View::_evaluate() - ROOT\Vendor\cakephp\cakephp\src\View\View.php, line 1203
+Cake\View\View::_render() - ROOT\Vendor\cakephp\cakephp\src\View\View.php, line 1164
+Cake\View\View::_renderElement() - ROOT\Vendor\cakephp\cakephp\src\View\View.php, line 1561
+Cake\View\View::element() - ROOT\Vendor\cakephp\cakephp\src\View\View.php, line 675
+include - APP/Template\Layout\default.ctp, line 20
+Cake\View\View::_evaluate() - ROOT\Vendor\cakephp\cakephp\src\View\View.php, line 1203
+Cake\View\View::_render() - ROOT\Vendor\cakephp\cakephp\src\View\View.php, line 1164
+Cake\View\View::renderLayout() - ROOT\Vendor\cakephp\cakephp\src\View\View.php, line 819
+Cake\View\View::render() - ROOT\Vendor\cakephp\cakephp\src\View\View.php, line 777
+Cake\Controller\Controller::render() - ROOT\Vendor\cakephp\cakephp\src\Controller\Controller.php, line 623
+Cake\Http\ActionDispatcher::_invoke() - ROOT\Vendor\cakephp\cakephp\src\Http\ActionDispatcher.php, line 125
+Cake\Http\ActionDispatcher::dispatch() - ROOT\Vendor\cakephp\cakephp\src\Http\ActionDispatcher.php, line 93
+Cake\Http\BaseApplication::__invoke() - ROOT\Vendor\cakephp\cakephp\src\Http\BaseApplication.php, line 108
+Cake\Http\Runner::__invoke() - ROOT\Vendor\cakephp\cakephp\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\RoutingMiddleware::__invoke() - ROOT\Vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php, line 104
+Cake\Http\Runner::__invoke() - ROOT\Vendor\cakephp\cakephp\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\AssetMiddleware::__invoke() - ROOT\Vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php, line 88
+Cake\Http\Runner::__invoke() - ROOT\Vendor\cakephp\cakephp\src\Http\Runner.php, line 65
+Cake\Error\Middleware\ErrorHandlerMiddleware::__invoke() - ROOT\Vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php, line 98
+Cake\Http\Runner::__invoke() - ROOT\Vendor\cakephp\cakephp\src\Http\Runner.php, line 65
+DebugKit\Middleware\DebugKitMiddleware::__invoke() - ROOT\Vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php, line 52
+Cake\Http\Runner::__invoke() - ROOT\Vendor\cakephp\cakephp\src\Http\Runner.php, line 65
+Cake\Http\Runner::run() - ROOT\Vendor\cakephp\cakephp\src\Http\Runner.php, line 51
+Cake\Http\Server::run() - ROOT\Vendor\cakephp\cakephp\src\Http\Server.php, line 81
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2018-03-26 18:32:31 Notice: Notice (8): Array to string conversion in [C:\Plataforma\src\View\Helper\AclHelper.php, line 64]
+Request URL: /
+Referer URL: http://www.plataforma.com/users/login
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - ROOT\Vendor\cakephp\cakephp\src\Error\BaseErrorHandler.php, line 153
+App\View\Helper\AclHelper::check() - APP/View\Helper\AclHelper.php, line 64
+include - APP/Template\Element\aside\sidebar-menu.ctp, line 6
+Cake\View\View::_evaluate() - ROOT\Vendor\cakephp\cakephp\src\View\View.php, line 1203
+Cake\View\View::_render() - ROOT\Vendor\cakephp\cakephp\src\View\View.php, line 1164
+Cake\View\View::_renderElement() - ROOT\Vendor\cakephp\cakephp\src\View\View.php, line 1561
+Cake\View\View::element() - ROOT\Vendor\cakephp\cakephp\src\View\View.php, line 675
+include - APP/Template\Element\aside-main-sidebar.ctp, line 17
+Cake\View\View::_evaluate() - ROOT\Vendor\cakephp\cakephp\src\View\View.php, line 1203
+Cake\View\View::_render() - ROOT\Vendor\cakephp\cakephp\src\View\View.php, line 1164
+Cake\View\View::_renderElement() - ROOT\Vendor\cakephp\cakephp\src\View\View.php, line 1561
+Cake\View\View::element() - ROOT\Vendor\cakephp\cakephp\src\View\View.php, line 675
+include - APP/Template\Layout\default.ctp, line 20
+Cake\View\View::_evaluate() - ROOT\Vendor\cakephp\cakephp\src\View\View.php, line 1203
+Cake\View\View::_render() - ROOT\Vendor\cakephp\cakephp\src\View\View.php, line 1164
+Cake\View\View::renderLayout() - ROOT\Vendor\cakephp\cakephp\src\View\View.php, line 819
+Cake\View\View::render() - ROOT\Vendor\cakephp\cakephp\src\View\View.php, line 777
+Cake\Controller\Controller::render() - ROOT\Vendor\cakephp\cakephp\src\Controller\Controller.php, line 623
+Cake\Http\ActionDispatcher::_invoke() - ROOT\Vendor\cakephp\cakephp\src\Http\ActionDispatcher.php, line 125
+Cake\Http\ActionDispatcher::dispatch() - ROOT\Vendor\cakephp\cakephp\src\Http\ActionDispatcher.php, line 93
+Cake\Http\BaseApplication::__invoke() - ROOT\Vendor\cakephp\cakephp\src\Http\BaseApplication.php, line 108
+Cake\Http\Runner::__invoke() - ROOT\Vendor\cakephp\cakephp\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\RoutingMiddleware::__invoke() - ROOT\Vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php, line 104
+Cake\Http\Runner::__invoke() - ROOT\Vendor\cakephp\cakephp\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\AssetMiddleware::__invoke() - ROOT\Vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php, line 88
+Cake\Http\Runner::__invoke() - ROOT\Vendor\cakephp\cakephp\src\Http\Runner.php, line 65
+Cake\Error\Middleware\ErrorHandlerMiddleware::__invoke() - ROOT\Vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php, line 98
+Cake\Http\Runner::__invoke() - ROOT\Vendor\cakephp\cakephp\src\Http\Runner.php, line 65
+DebugKit\Middleware\DebugKitMiddleware::__invoke() - ROOT\Vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php, line 52
+Cake\Http\Runner::__invoke() - ROOT\Vendor\cakephp\cakephp\src\Http\Runner.php, line 65
+Cake\Http\Runner::run() - ROOT\Vendor\cakephp\cakephp\src\Http\Runner.php, line 51
+Cake\Http\Server::run() - ROOT\Vendor\cakephp\cakephp\src\Http\Server.php, line 81
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2018-03-26 18:43:05 Notice: Notice (8): Array to string conversion in [C:\Plataforma\src\View\Helper\AclHelper.php, line 60]
+Request URL: /
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - ROOT\Vendor\cakephp\cakephp\src\Error\BaseErrorHandler.php, line 153
+App\View\Helper\AclHelper::check() - APP/View\Helper\AclHelper.php, line 60
+include - APP/Template\Element\aside\sidebar-menu.ctp, line 6
+Cake\View\View::_evaluate() - ROOT\Vendor\cakephp\cakephp\src\View\View.php, line 1203
+Cake\View\View::_render() - ROOT\Vendor\cakephp\cakephp\src\View\View.php, line 1164
+Cake\View\View::_renderElement() - ROOT\Vendor\cakephp\cakephp\src\View\View.php, line 1561
+Cake\View\View::element() - ROOT\Vendor\cakephp\cakephp\src\View\View.php, line 675
+include - APP/Template\Element\aside-main-sidebar.ctp, line 17
+Cake\View\View::_evaluate() - ROOT\Vendor\cakephp\cakephp\src\View\View.php, line 1203
+Cake\View\View::_render() - ROOT\Vendor\cakephp\cakephp\src\View\View.php, line 1164
+Cake\View\View::_renderElement() - ROOT\Vendor\cakephp\cakephp\src\View\View.php, line 1561
+Cake\View\View::element() - ROOT\Vendor\cakephp\cakephp\src\View\View.php, line 675
+include - APP/Template\Layout\default.ctp, line 20
+Cake\View\View::_evaluate() - ROOT\Vendor\cakephp\cakephp\src\View\View.php, line 1203
+Cake\View\View::_render() - ROOT\Vendor\cakephp\cakephp\src\View\View.php, line 1164
+Cake\View\View::renderLayout() - ROOT\Vendor\cakephp\cakephp\src\View\View.php, line 819
+Cake\View\View::render() - ROOT\Vendor\cakephp\cakephp\src\View\View.php, line 777
+Cake\Controller\Controller::render() - ROOT\Vendor\cakephp\cakephp\src\Controller\Controller.php, line 623
+Cake\Http\ActionDispatcher::_invoke() - ROOT\Vendor\cakephp\cakephp\src\Http\ActionDispatcher.php, line 125
+Cake\Http\ActionDispatcher::dispatch() - ROOT\Vendor\cakephp\cakephp\src\Http\ActionDispatcher.php, line 93
+Cake\Http\BaseApplication::__invoke() - ROOT\Vendor\cakephp\cakephp\src\Http\BaseApplication.php, line 108
+Cake\Http\Runner::__invoke() - ROOT\Vendor\cakephp\cakephp\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\RoutingMiddleware::__invoke() - ROOT\Vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php, line 104
+Cake\Http\Runner::__invoke() - ROOT\Vendor\cakephp\cakephp\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\AssetMiddleware::__invoke() - ROOT\Vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php, line 88
+Cake\Http\Runner::__invoke() - ROOT\Vendor\cakephp\cakephp\src\Http\Runner.php, line 65
+Cake\Error\Middleware\ErrorHandlerMiddleware::__invoke() - ROOT\Vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php, line 98
+Cake\Http\Runner::__invoke() - ROOT\Vendor\cakephp\cakephp\src\Http\Runner.php, line 65
+DebugKit\Middleware\DebugKitMiddleware::__invoke() - ROOT\Vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php, line 52
+Cake\Http\Runner::__invoke() - ROOT\Vendor\cakephp\cakephp\src\Http\Runner.php, line 65
+Cake\Http\Runner::run() - ROOT\Vendor\cakephp\cakephp\src\Http\Runner.php, line 51
+Cake\Http\Server::run() - ROOT\Vendor\cakephp\cakephp\src\Http\Server.php, line 81
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2018-03-26 18:44:38 Notice: Notice (8): Array to string conversion in [C:\Plataforma\src\View\Helper\AclHelper.php, line 61]
+Request URL: /
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - ROOT\Vendor\cakephp\cakephp\src\Error\BaseErrorHandler.php, line 153
+App\View\Helper\AclHelper::check() - APP/View\Helper\AclHelper.php, line 61
+include - APP/Template\Element\aside\sidebar-menu.ctp, line 6
+Cake\View\View::_evaluate() - ROOT\Vendor\cakephp\cakephp\src\View\View.php, line 1203
+Cake\View\View::_render() - ROOT\Vendor\cakephp\cakephp\src\View\View.php, line 1164
+Cake\View\View::_renderElement() - ROOT\Vendor\cakephp\cakephp\src\View\View.php, line 1561
+Cake\View\View::element() - ROOT\Vendor\cakephp\cakephp\src\View\View.php, line 675
+include - APP/Template\Element\aside-main-sidebar.ctp, line 17
+Cake\View\View::_evaluate() - ROOT\Vendor\cakephp\cakephp\src\View\View.php, line 1203
+Cake\View\View::_render() - ROOT\Vendor\cakephp\cakephp\src\View\View.php, line 1164
+Cake\View\View::_renderElement() - ROOT\Vendor\cakephp\cakephp\src\View\View.php, line 1561
+Cake\View\View::element() - ROOT\Vendor\cakephp\cakephp\src\View\View.php, line 675
+include - APP/Template\Layout\default.ctp, line 20
+Cake\View\View::_evaluate() - ROOT\Vendor\cakephp\cakephp\src\View\View.php, line 1203
+Cake\View\View::_render() - ROOT\Vendor\cakephp\cakephp\src\View\View.php, line 1164
+Cake\View\View::renderLayout() - ROOT\Vendor\cakephp\cakephp\src\View\View.php, line 819
+Cake\View\View::render() - ROOT\Vendor\cakephp\cakephp\src\View\View.php, line 777
+Cake\Controller\Controller::render() - ROOT\Vendor\cakephp\cakephp\src\Controller\Controller.php, line 623
+Cake\Http\ActionDispatcher::_invoke() - ROOT\Vendor\cakephp\cakephp\src\Http\ActionDispatcher.php, line 125
+Cake\Http\ActionDispatcher::dispatch() - ROOT\Vendor\cakephp\cakephp\src\Http\ActionDispatcher.php, line 93
+Cake\Http\BaseApplication::__invoke() - ROOT\Vendor\cakephp\cakephp\src\Http\BaseApplication.php, line 108
+Cake\Http\Runner::__invoke() - ROOT\Vendor\cakephp\cakephp\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\RoutingMiddleware::__invoke() - ROOT\Vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php, line 104
+Cake\Http\Runner::__invoke() - ROOT\Vendor\cakephp\cakephp\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\AssetMiddleware::__invoke() - ROOT\Vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php, line 88
+Cake\Http\Runner::__invoke() - ROOT\Vendor\cakephp\cakephp\src\Http\Runner.php, line 65
+Cake\Error\Middleware\ErrorHandlerMiddleware::__invoke() - ROOT\Vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php, line 98
+Cake\Http\Runner::__invoke() - ROOT\Vendor\cakephp\cakephp\src\Http\Runner.php, line 65
+DebugKit\Middleware\DebugKitMiddleware::__invoke() - ROOT\Vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php, line 52
+Cake\Http\Runner::__invoke() - ROOT\Vendor\cakephp\cakephp\src\Http\Runner.php, line 65
+Cake\Http\Runner::run() - ROOT\Vendor\cakephp\cakephp\src\Http\Runner.php, line 51
+Cake\Http\Server::run() - ROOT\Vendor\cakephp\cakephp\src\Http\Server.php, line 81
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2018-03-26 18:44:57 Notice: Notice (8): Array to string conversion in [C:\Plataforma\src\View\Helper\AclHelper.php, line 62]
+Request URL: /
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - ROOT\Vendor\cakephp\cakephp\src\Error\BaseErrorHandler.php, line 153
+App\View\Helper\AclHelper::check() - APP/View\Helper\AclHelper.php, line 62
+include - APP/Template\Element\aside\sidebar-menu.ctp, line 6
+Cake\View\View::_evaluate() - ROOT\Vendor\cakephp\cakephp\src\View\View.php, line 1203
+Cake\View\View::_render() - ROOT\Vendor\cakephp\cakephp\src\View\View.php, line 1164
+Cake\View\View::_renderElement() - ROOT\Vendor\cakephp\cakephp\src\View\View.php, line 1561
+Cake\View\View::element() - ROOT\Vendor\cakephp\cakephp\src\View\View.php, line 675
+include - APP/Template\Element\aside-main-sidebar.ctp, line 17
+Cake\View\View::_evaluate() - ROOT\Vendor\cakephp\cakephp\src\View\View.php, line 1203
+Cake\View\View::_render() - ROOT\Vendor\cakephp\cakephp\src\View\View.php, line 1164
+Cake\View\View::_renderElement() - ROOT\Vendor\cakephp\cakephp\src\View\View.php, line 1561
+Cake\View\View::element() - ROOT\Vendor\cakephp\cakephp\src\View\View.php, line 675
+include - APP/Template\Layout\default.ctp, line 20
+Cake\View\View::_evaluate() - ROOT\Vendor\cakephp\cakephp\src\View\View.php, line 1203
+Cake\View\View::_render() - ROOT\Vendor\cakephp\cakephp\src\View\View.php, line 1164
+Cake\View\View::renderLayout() - ROOT\Vendor\cakephp\cakephp\src\View\View.php, line 819
+Cake\View\View::render() - ROOT\Vendor\cakephp\cakephp\src\View\View.php, line 777
+Cake\Controller\Controller::render() - ROOT\Vendor\cakephp\cakephp\src\Controller\Controller.php, line 623
+Cake\Http\ActionDispatcher::_invoke() - ROOT\Vendor\cakephp\cakephp\src\Http\ActionDispatcher.php, line 125
+Cake\Http\ActionDispatcher::dispatch() - ROOT\Vendor\cakephp\cakephp\src\Http\ActionDispatcher.php, line 93
+Cake\Http\BaseApplication::__invoke() - ROOT\Vendor\cakephp\cakephp\src\Http\BaseApplication.php, line 108
+Cake\Http\Runner::__invoke() - ROOT\Vendor\cakephp\cakephp\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\RoutingMiddleware::__invoke() - ROOT\Vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php, line 104
+Cake\Http\Runner::__invoke() - ROOT\Vendor\cakephp\cakephp\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\AssetMiddleware::__invoke() - ROOT\Vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php, line 88
+Cake\Http\Runner::__invoke() - ROOT\Vendor\cakephp\cakephp\src\Http\Runner.php, line 65
+Cake\Error\Middleware\ErrorHandlerMiddleware::__invoke() - ROOT\Vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php, line 98
+Cake\Http\Runner::__invoke() - ROOT\Vendor\cakephp\cakephp\src\Http\Runner.php, line 65
+DebugKit\Middleware\DebugKitMiddleware::__invoke() - ROOT\Vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php, line 52
+Cake\Http\Runner::__invoke() - ROOT\Vendor\cakephp\cakephp\src\Http\Runner.php, line 65
+Cake\Http\Runner::run() - ROOT\Vendor\cakephp\cakephp\src\Http\Runner.php, line 51
+Cake\Http\Server::run() - ROOT\Vendor\cakephp\cakephp\src\Http\Server.php, line 81
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2018-03-26 18:45:52 Notice: Notice (8): Array to string conversion in [C:\Plataforma\src\View\Helper\AclHelper.php, line 60]
+Request URL: /
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - ROOT\Vendor\cakephp\cakephp\src\Error\BaseErrorHandler.php, line 153
+App\View\Helper\AclHelper::check() - APP/View\Helper\AclHelper.php, line 60
+include - APP/Template\Element\aside\sidebar-menu.ctp, line 6
+Cake\View\View::_evaluate() - ROOT\Vendor\cakephp\cakephp\src\View\View.php, line 1203
+Cake\View\View::_render() - ROOT\Vendor\cakephp\cakephp\src\View\View.php, line 1164
+Cake\View\View::_renderElement() - ROOT\Vendor\cakephp\cakephp\src\View\View.php, line 1561
+Cake\View\View::element() - ROOT\Vendor\cakephp\cakephp\src\View\View.php, line 675
+include - APP/Template\Element\aside-main-sidebar.ctp, line 17
+Cake\View\View::_evaluate() - ROOT\Vendor\cakephp\cakephp\src\View\View.php, line 1203
+Cake\View\View::_render() - ROOT\Vendor\cakephp\cakephp\src\View\View.php, line 1164
+Cake\View\View::_renderElement() - ROOT\Vendor\cakephp\cakephp\src\View\View.php, line 1561
+Cake\View\View::element() - ROOT\Vendor\cakephp\cakephp\src\View\View.php, line 675
+include - APP/Template\Layout\default.ctp, line 20
+Cake\View\View::_evaluate() - ROOT\Vendor\cakephp\cakephp\src\View\View.php, line 1203
+Cake\View\View::_render() - ROOT\Vendor\cakephp\cakephp\src\View\View.php, line 1164
+Cake\View\View::renderLayout() - ROOT\Vendor\cakephp\cakephp\src\View\View.php, line 819
+Cake\View\View::render() - ROOT\Vendor\cakephp\cakephp\src\View\View.php, line 777
+Cake\Controller\Controller::render() - ROOT\Vendor\cakephp\cakephp\src\Controller\Controller.php, line 623
+Cake\Http\ActionDispatcher::_invoke() - ROOT\Vendor\cakephp\cakephp\src\Http\ActionDispatcher.php, line 125
+Cake\Http\ActionDispatcher::dispatch() - ROOT\Vendor\cakephp\cakephp\src\Http\ActionDispatcher.php, line 93
+Cake\Http\BaseApplication::__invoke() - ROOT\Vendor\cakephp\cakephp\src\Http\BaseApplication.php, line 108
+Cake\Http\Runner::__invoke() - ROOT\Vendor\cakephp\cakephp\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\RoutingMiddleware::__invoke() - ROOT\Vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php, line 104
+Cake\Http\Runner::__invoke() - ROOT\Vendor\cakephp\cakephp\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\AssetMiddleware::__invoke() - ROOT\Vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php, line 88
+Cake\Http\Runner::__invoke() - ROOT\Vendor\cakephp\cakephp\src\Http\Runner.php, line 65
+Cake\Error\Middleware\ErrorHandlerMiddleware::__invoke() - ROOT\Vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php, line 98
+Cake\Http\Runner::__invoke() - ROOT\Vendor\cakephp\cakephp\src\Http\Runner.php, line 65
+DebugKit\Middleware\DebugKitMiddleware::__invoke() - ROOT\Vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php, line 52
+Cake\Http\Runner::__invoke() - ROOT\Vendor\cakephp\cakephp\src\Http\Runner.php, line 65
+Cake\Http\Runner::run() - ROOT\Vendor\cakephp\cakephp\src\Http\Runner.php, line 51
+Cake\Http\Server::run() - ROOT\Vendor\cakephp\cakephp\src\Http\Server.php, line 81
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2018-03-26 18:46:43 Notice: Notice (8): Undefined variable: request in [C:\Plataforma\src\View\Helper\AclHelper.php, line 61]
+Request URL: /
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - ROOT\Vendor\cakephp\cakephp\src\Error\BaseErrorHandler.php, line 153
+App\View\Helper\AclHelper::check() - APP/View\Helper\AclHelper.php, line 61
+include - APP/Template\Element\aside\sidebar-menu.ctp, line 6
+Cake\View\View::_evaluate() - ROOT\Vendor\cakephp\cakephp\src\View\View.php, line 1203
+Cake\View\View::_render() - ROOT\Vendor\cakephp\cakephp\src\View\View.php, line 1164
+Cake\View\View::_renderElement() - ROOT\Vendor\cakephp\cakephp\src\View\View.php, line 1561
+Cake\View\View::element() - ROOT\Vendor\cakephp\cakephp\src\View\View.php, line 675
+include - APP/Template\Element\aside-main-sidebar.ctp, line 17
+Cake\View\View::_evaluate() - ROOT\Vendor\cakephp\cakephp\src\View\View.php, line 1203
+Cake\View\View::_render() - ROOT\Vendor\cakephp\cakephp\src\View\View.php, line 1164
+Cake\View\View::_renderElement() - ROOT\Vendor\cakephp\cakephp\src\View\View.php, line 1561
+Cake\View\View::element() - ROOT\Vendor\cakephp\cakephp\src\View\View.php, line 675
+include - APP/Template\Layout\default.ctp, line 20
+Cake\View\View::_evaluate() - ROOT\Vendor\cakephp\cakephp\src\View\View.php, line 1203
+Cake\View\View::_render() - ROOT\Vendor\cakephp\cakephp\src\View\View.php, line 1164
+Cake\View\View::renderLayout() - ROOT\Vendor\cakephp\cakephp\src\View\View.php, line 819
+Cake\View\View::render() - ROOT\Vendor\cakephp\cakephp\src\View\View.php, line 777
+Cake\Controller\Controller::render() - ROOT\Vendor\cakephp\cakephp\src\Controller\Controller.php, line 623
+Cake\Http\ActionDispatcher::_invoke() - ROOT\Vendor\cakephp\cakephp\src\Http\ActionDispatcher.php, line 125
+Cake\Http\ActionDispatcher::dispatch() - ROOT\Vendor\cakephp\cakephp\src\Http\ActionDispatcher.php, line 93
+Cake\Http\BaseApplication::__invoke() - ROOT\Vendor\cakephp\cakephp\src\Http\BaseApplication.php, line 108
+Cake\Http\Runner::__invoke() - ROOT\Vendor\cakephp\cakephp\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\RoutingMiddleware::__invoke() - ROOT\Vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php, line 104
+Cake\Http\Runner::__invoke() - ROOT\Vendor\cakephp\cakephp\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\AssetMiddleware::__invoke() - ROOT\Vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php, line 88
+Cake\Http\Runner::__invoke() - ROOT\Vendor\cakephp\cakephp\src\Http\Runner.php, line 65
+Cake\Error\Middleware\ErrorHandlerMiddleware::__invoke() - ROOT\Vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php, line 98
+Cake\Http\Runner::__invoke() - ROOT\Vendor\cakephp\cakephp\src\Http\Runner.php, line 65
+DebugKit\Middleware\DebugKitMiddleware::__invoke() - ROOT\Vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php, line 52
+Cake\Http\Runner::__invoke() - ROOT\Vendor\cakephp\cakephp\src\Http\Runner.php, line 65
+Cake\Http\Runner::run() - ROOT\Vendor\cakephp\cakephp\src\Http\Runner.php, line 51
+Cake\Http\Server::run() - ROOT\Vendor\cakephp\cakephp\src\Http\Server.php, line 81
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2018-03-26 18:47:11 Notice: Notice (8): Array to string conversion in [C:\Plataforma\src\View\Helper\AclHelper.php, line 64]
+Request URL: /
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - ROOT\Vendor\cakephp\cakephp\src\Error\BaseErrorHandler.php, line 153
+App\View\Helper\AclHelper::check() - APP/View\Helper\AclHelper.php, line 64
+include - APP/Template\Element\aside\sidebar-menu.ctp, line 6
+Cake\View\View::_evaluate() - ROOT\Vendor\cakephp\cakephp\src\View\View.php, line 1203
+Cake\View\View::_render() - ROOT\Vendor\cakephp\cakephp\src\View\View.php, line 1164
+Cake\View\View::_renderElement() - ROOT\Vendor\cakephp\cakephp\src\View\View.php, line 1561
+Cake\View\View::element() - ROOT\Vendor\cakephp\cakephp\src\View\View.php, line 675
+include - APP/Template\Element\aside-main-sidebar.ctp, line 17
+Cake\View\View::_evaluate() - ROOT\Vendor\cakephp\cakephp\src\View\View.php, line 1203
+Cake\View\View::_render() - ROOT\Vendor\cakephp\cakephp\src\View\View.php, line 1164
+Cake\View\View::_renderElement() - ROOT\Vendor\cakephp\cakephp\src\View\View.php, line 1561
+Cake\View\View::element() - ROOT\Vendor\cakephp\cakephp\src\View\View.php, line 675
+include - APP/Template\Layout\default.ctp, line 20
+Cake\View\View::_evaluate() - ROOT\Vendor\cakephp\cakephp\src\View\View.php, line 1203
+Cake\View\View::_render() - ROOT\Vendor\cakephp\cakephp\src\View\View.php, line 1164
+Cake\View\View::renderLayout() - ROOT\Vendor\cakephp\cakephp\src\View\View.php, line 819
+Cake\View\View::render() - ROOT\Vendor\cakephp\cakephp\src\View\View.php, line 777
+Cake\Controller\Controller::render() - ROOT\Vendor\cakephp\cakephp\src\Controller\Controller.php, line 623
+Cake\Http\ActionDispatcher::_invoke() - ROOT\Vendor\cakephp\cakephp\src\Http\ActionDispatcher.php, line 125
+Cake\Http\ActionDispatcher::dispatch() - ROOT\Vendor\cakephp\cakephp\src\Http\ActionDispatcher.php, line 93
+Cake\Http\BaseApplication::__invoke() - ROOT\Vendor\cakephp\cakephp\src\Http\BaseApplication.php, line 108
+Cake\Http\Runner::__invoke() - ROOT\Vendor\cakephp\cakephp\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\RoutingMiddleware::__invoke() - ROOT\Vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php, line 104
+Cake\Http\Runner::__invoke() - ROOT\Vendor\cakephp\cakephp\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\AssetMiddleware::__invoke() - ROOT\Vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php, line 88
+Cake\Http\Runner::__invoke() - ROOT\Vendor\cakephp\cakephp\src\Http\Runner.php, line 65
+Cake\Error\Middleware\ErrorHandlerMiddleware::__invoke() - ROOT\Vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php, line 98
+Cake\Http\Runner::__invoke() - ROOT\Vendor\cakephp\cakephp\src\Http\Runner.php, line 65
+DebugKit\Middleware\DebugKitMiddleware::__invoke() - ROOT\Vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php, line 52
+Cake\Http\Runner::__invoke() - ROOT\Vendor\cakephp\cakephp\src\Http\Runner.php, line 65
+Cake\Http\Runner::run() - ROOT\Vendor\cakephp\cakephp\src\Http\Runner.php, line 51
+Cake\Http\Server::run() - ROOT\Vendor\cakephp\cakephp\src\Http\Server.php, line 81
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2018-03-26 18:50:49 Notice: Notice (8): Array to string conversion in [C:\Plataforma\src\View\Helper\AclHelper.php, line 58]
+Request URL: /
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - ROOT\Vendor\cakephp\cakephp\src\Error\BaseErrorHandler.php, line 153
+App\View\Helper\AclHelper::check() - APP/View\Helper\AclHelper.php, line 58
+include - APP/Template\Element\aside\sidebar-menu.ctp, line 6
+Cake\View\View::_evaluate() - ROOT\Vendor\cakephp\cakephp\src\View\View.php, line 1203
+Cake\View\View::_render() - ROOT\Vendor\cakephp\cakephp\src\View\View.php, line 1164
+Cake\View\View::_renderElement() - ROOT\Vendor\cakephp\cakephp\src\View\View.php, line 1561
+Cake\View\View::element() - ROOT\Vendor\cakephp\cakephp\src\View\View.php, line 675
+include - APP/Template\Element\aside-main-sidebar.ctp, line 17
+Cake\View\View::_evaluate() - ROOT\Vendor\cakephp\cakephp\src\View\View.php, line 1203
+Cake\View\View::_render() - ROOT\Vendor\cakephp\cakephp\src\View\View.php, line 1164
+Cake\View\View::_renderElement() - ROOT\Vendor\cakephp\cakephp\src\View\View.php, line 1561
+Cake\View\View::element() - ROOT\Vendor\cakephp\cakephp\src\View\View.php, line 675
+include - APP/Template\Layout\default.ctp, line 20
+Cake\View\View::_evaluate() - ROOT\Vendor\cakephp\cakephp\src\View\View.php, line 1203
+Cake\View\View::_render() - ROOT\Vendor\cakephp\cakephp\src\View\View.php, line 1164
+Cake\View\View::renderLayout() - ROOT\Vendor\cakephp\cakephp\src\View\View.php, line 819
+Cake\View\View::render() - ROOT\Vendor\cakephp\cakephp\src\View\View.php, line 777
+Cake\Controller\Controller::render() - ROOT\Vendor\cakephp\cakephp\src\Controller\Controller.php, line 623
+Cake\Http\ActionDispatcher::_invoke() - ROOT\Vendor\cakephp\cakephp\src\Http\ActionDispatcher.php, line 125
+Cake\Http\ActionDispatcher::dispatch() - ROOT\Vendor\cakephp\cakephp\src\Http\ActionDispatcher.php, line 93
+Cake\Http\BaseApplication::__invoke() - ROOT\Vendor\cakephp\cakephp\src\Http\BaseApplication.php, line 108
+Cake\Http\Runner::__invoke() - ROOT\Vendor\cakephp\cakephp\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\RoutingMiddleware::__invoke() - ROOT\Vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php, line 104
+Cake\Http\Runner::__invoke() - ROOT\Vendor\cakephp\cakephp\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\AssetMiddleware::__invoke() - ROOT\Vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php, line 88
+Cake\Http\Runner::__invoke() - ROOT\Vendor\cakephp\cakephp\src\Http\Runner.php, line 65
+Cake\Error\Middleware\ErrorHandlerMiddleware::__invoke() - ROOT\Vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php, line 98
+Cake\Http\Runner::__invoke() - ROOT\Vendor\cakephp\cakephp\src\Http\Runner.php, line 65
+DebugKit\Middleware\DebugKitMiddleware::__invoke() - ROOT\Vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php, line 52
+Cake\Http\Runner::__invoke() - ROOT\Vendor\cakephp\cakephp\src\Http\Runner.php, line 65
+Cake\Http\Runner::run() - ROOT\Vendor\cakephp\cakephp\src\Http\Runner.php, line 51
+Cake\Http\Server::run() - ROOT\Vendor\cakephp\cakephp\src\Http\Server.php, line 81
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2018-03-26 18:52:01 Notice: Notice (8): Array to string conversion in [C:\Plataforma\src\View\Helper\AclHelper.php, line 63]
+Request URL: /
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - ROOT\Vendor\cakephp\cakephp\src\Error\BaseErrorHandler.php, line 153
+App\View\Helper\AclHelper::check() - APP/View\Helper\AclHelper.php, line 63
+include - APP/Template\Element\aside\sidebar-menu.ctp, line 6
+Cake\View\View::_evaluate() - ROOT\Vendor\cakephp\cakephp\src\View\View.php, line 1203
+Cake\View\View::_render() - ROOT\Vendor\cakephp\cakephp\src\View\View.php, line 1164
+Cake\View\View::_renderElement() - ROOT\Vendor\cakephp\cakephp\src\View\View.php, line 1561
+Cake\View\View::element() - ROOT\Vendor\cakephp\cakephp\src\View\View.php, line 675
+include - APP/Template\Element\aside-main-sidebar.ctp, line 17
+Cake\View\View::_evaluate() - ROOT\Vendor\cakephp\cakephp\src\View\View.php, line 1203
+Cake\View\View::_render() - ROOT\Vendor\cakephp\cakephp\src\View\View.php, line 1164
+Cake\View\View::_renderElement() - ROOT\Vendor\cakephp\cakephp\src\View\View.php, line 1561
+Cake\View\View::element() - ROOT\Vendor\cakephp\cakephp\src\View\View.php, line 675
+include - APP/Template\Layout\default.ctp, line 20
+Cake\View\View::_evaluate() - ROOT\Vendor\cakephp\cakephp\src\View\View.php, line 1203
+Cake\View\View::_render() - ROOT\Vendor\cakephp\cakephp\src\View\View.php, line 1164
+Cake\View\View::renderLayout() - ROOT\Vendor\cakephp\cakephp\src\View\View.php, line 819
+Cake\View\View::render() - ROOT\Vendor\cakephp\cakephp\src\View\View.php, line 777
+Cake\Controller\Controller::render() - ROOT\Vendor\cakephp\cakephp\src\Controller\Controller.php, line 623
+Cake\Http\ActionDispatcher::_invoke() - ROOT\Vendor\cakephp\cakephp\src\Http\ActionDispatcher.php, line 125
+Cake\Http\ActionDispatcher::dispatch() - ROOT\Vendor\cakephp\cakephp\src\Http\ActionDispatcher.php, line 93
+Cake\Http\BaseApplication::__invoke() - ROOT\Vendor\cakephp\cakephp\src\Http\BaseApplication.php, line 108
+Cake\Http\Runner::__invoke() - ROOT\Vendor\cakephp\cakephp\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\RoutingMiddleware::__invoke() - ROOT\Vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php, line 104
+Cake\Http\Runner::__invoke() - ROOT\Vendor\cakephp\cakephp\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\AssetMiddleware::__invoke() - ROOT\Vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php, line 88
+Cake\Http\Runner::__invoke() - ROOT\Vendor\cakephp\cakephp\src\Http\Runner.php, line 65
+Cake\Error\Middleware\ErrorHandlerMiddleware::__invoke() - ROOT\Vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php, line 98
+Cake\Http\Runner::__invoke() - ROOT\Vendor\cakephp\cakephp\src\Http\Runner.php, line 65
+DebugKit\Middleware\DebugKitMiddleware::__invoke() - ROOT\Vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php, line 52
+Cake\Http\Runner::__invoke() - ROOT\Vendor\cakephp\cakephp\src\Http\Runner.php, line 65
+Cake\Http\Runner::run() - ROOT\Vendor\cakephp\cakephp\src\Http\Runner.php, line 51
+Cake\Http\Server::run() - ROOT\Vendor\cakephp\cakephp\src\Http\Server.php, line 81
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2018-03-26 18:55:27 Notice: Notice (8): Trying to get property of non-object in [C:\Plataforma\src\View\Helper\AclHelper.php, line 66]
+Request URL: /
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - ROOT\Vendor\cakephp\cakephp\src\Error\BaseErrorHandler.php, line 153
+App\View\Helper\AclHelper::check() - APP/View\Helper\AclHelper.php, line 66
+include - APP/Template\Element\aside\sidebar-menu.ctp, line 6
+Cake\View\View::_evaluate() - ROOT\Vendor\cakephp\cakephp\src\View\View.php, line 1203
+Cake\View\View::_render() - ROOT\Vendor\cakephp\cakephp\src\View\View.php, line 1164
+Cake\View\View::_renderElement() - ROOT\Vendor\cakephp\cakephp\src\View\View.php, line 1561
+Cake\View\View::element() - ROOT\Vendor\cakephp\cakephp\src\View\View.php, line 675
+include - APP/Template\Element\aside-main-sidebar.ctp, line 17
+Cake\View\View::_evaluate() - ROOT\Vendor\cakephp\cakephp\src\View\View.php, line 1203
+Cake\View\View::_render() - ROOT\Vendor\cakephp\cakephp\src\View\View.php, line 1164
+Cake\View\View::_renderElement() - ROOT\Vendor\cakephp\cakephp\src\View\View.php, line 1561
+Cake\View\View::element() - ROOT\Vendor\cakephp\cakephp\src\View\View.php, line 675
+include - APP/Template\Layout\default.ctp, line 20
+Cake\View\View::_evaluate() - ROOT\Vendor\cakephp\cakephp\src\View\View.php, line 1203
+Cake\View\View::_render() - ROOT\Vendor\cakephp\cakephp\src\View\View.php, line 1164
+Cake\View\View::renderLayout() - ROOT\Vendor\cakephp\cakephp\src\View\View.php, line 819
+Cake\View\View::render() - ROOT\Vendor\cakephp\cakephp\src\View\View.php, line 777
+Cake\Controller\Controller::render() - ROOT\Vendor\cakephp\cakephp\src\Controller\Controller.php, line 623
+Cake\Http\ActionDispatcher::_invoke() - ROOT\Vendor\cakephp\cakephp\src\Http\ActionDispatcher.php, line 125
+Cake\Http\ActionDispatcher::dispatch() - ROOT\Vendor\cakephp\cakephp\src\Http\ActionDispatcher.php, line 93
+Cake\Http\BaseApplication::__invoke() - ROOT\Vendor\cakephp\cakephp\src\Http\BaseApplication.php, line 108
+Cake\Http\Runner::__invoke() - ROOT\Vendor\cakephp\cakephp\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\RoutingMiddleware::__invoke() - ROOT\Vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php, line 104
+Cake\Http\Runner::__invoke() - ROOT\Vendor\cakephp\cakephp\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\AssetMiddleware::__invoke() - ROOT\Vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php, line 88
+Cake\Http\Runner::__invoke() - ROOT\Vendor\cakephp\cakephp\src\Http\Runner.php, line 65
+Cake\Error\Middleware\ErrorHandlerMiddleware::__invoke() - ROOT\Vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php, line 98
+Cake\Http\Runner::__invoke() - ROOT\Vendor\cakephp\cakephp\src\Http\Runner.php, line 65
+DebugKit\Middleware\DebugKitMiddleware::__invoke() - ROOT\Vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php, line 52
+Cake\Http\Runner::__invoke() - ROOT\Vendor\cakephp\cakephp\src\Http\Runner.php, line 65
+Cake\Http\Runner::run() - ROOT\Vendor\cakephp\cakephp\src\Http\Runner.php, line 51
+Cake\Http\Server::run() - ROOT\Vendor\cakephp\cakephp\src\Http\Server.php, line 81
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2018-03-26 18:56:28 Notice: Notice (8): Array to string conversion in [C:\Plataforma\src\View\Helper\AclHelper.php, line 63]
+Request URL: /
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - ROOT\Vendor\cakephp\cakephp\src\Error\BaseErrorHandler.php, line 153
+App\View\Helper\AclHelper::check() - APP/View\Helper\AclHelper.php, line 63
+include - APP/Template\Element\aside\sidebar-menu.ctp, line 6
+Cake\View\View::_evaluate() - ROOT\Vendor\cakephp\cakephp\src\View\View.php, line 1203
+Cake\View\View::_render() - ROOT\Vendor\cakephp\cakephp\src\View\View.php, line 1164
+Cake\View\View::_renderElement() - ROOT\Vendor\cakephp\cakephp\src\View\View.php, line 1561
+Cake\View\View::element() - ROOT\Vendor\cakephp\cakephp\src\View\View.php, line 675
+include - APP/Template\Element\aside-main-sidebar.ctp, line 17
+Cake\View\View::_evaluate() - ROOT\Vendor\cakephp\cakephp\src\View\View.php, line 1203
+Cake\View\View::_render() - ROOT\Vendor\cakephp\cakephp\src\View\View.php, line 1164
+Cake\View\View::_renderElement() - ROOT\Vendor\cakephp\cakephp\src\View\View.php, line 1561
+Cake\View\View::element() - ROOT\Vendor\cakephp\cakephp\src\View\View.php, line 675
+include - APP/Template\Layout\default.ctp, line 20
+Cake\View\View::_evaluate() - ROOT\Vendor\cakephp\cakephp\src\View\View.php, line 1203
+Cake\View\View::_render() - ROOT\Vendor\cakephp\cakephp\src\View\View.php, line 1164
+Cake\View\View::renderLayout() - ROOT\Vendor\cakephp\cakephp\src\View\View.php, line 819
+Cake\View\View::render() - ROOT\Vendor\cakephp\cakephp\src\View\View.php, line 777
+Cake\Controller\Controller::render() - ROOT\Vendor\cakephp\cakephp\src\Controller\Controller.php, line 623
+Cake\Http\ActionDispatcher::_invoke() - ROOT\Vendor\cakephp\cakephp\src\Http\ActionDispatcher.php, line 125
+Cake\Http\ActionDispatcher::dispatch() - ROOT\Vendor\cakephp\cakephp\src\Http\ActionDispatcher.php, line 93
+Cake\Http\BaseApplication::__invoke() - ROOT\Vendor\cakephp\cakephp\src\Http\BaseApplication.php, line 108
+Cake\Http\Runner::__invoke() - ROOT\Vendor\cakephp\cakephp\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\RoutingMiddleware::__invoke() - ROOT\Vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php, line 104
+Cake\Http\Runner::__invoke() - ROOT\Vendor\cakephp\cakephp\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\AssetMiddleware::__invoke() - ROOT\Vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php, line 88
+Cake\Http\Runner::__invoke() - ROOT\Vendor\cakephp\cakephp\src\Http\Runner.php, line 65
+Cake\Error\Middleware\ErrorHandlerMiddleware::__invoke() - ROOT\Vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php, line 98
+Cake\Http\Runner::__invoke() - ROOT\Vendor\cakephp\cakephp\src\Http\Runner.php, line 65
+DebugKit\Middleware\DebugKitMiddleware::__invoke() - ROOT\Vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php, line 52
+Cake\Http\Runner::__invoke() - ROOT\Vendor\cakephp\cakephp\src\Http\Runner.php, line 65
+Cake\Http\Runner::run() - ROOT\Vendor\cakephp\cakephp\src\Http\Runner.php, line 51
+Cake\Http\Server::run() - ROOT\Vendor\cakephp\cakephp\src\Http\Server.php, line 81
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2018-03-26 18:57:16 Notice: {
     "id": 1,
     "group_id": 1,
     "role_id": 1,
@@ -56,3 +805,45 @@ Cake\Http\Server::run() - ROOT\Vendor\cakephp\cakephp\src\Http\Server.php, line 
     "created": "2018-02-16T09:19:46+00:00",
     "modified": "2018-02-16T17:53:28+00:00"
 }
+2018-03-26 19:10:45 Notice: Notice (1024): ACO permissions key 5 does not exist in DbAcl::check() in [C:\Plataforma\Vendor\cakephp\acl\src\Model\Table\PermissionsTable.php, line 100]
+Request URL: /
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - ROOT\Vendor\cakephp\cakephp\src\Error\BaseErrorHandler.php, line 153
+Acl\Model\Table\PermissionsTable::check() - ROOT\Vendor\cakephp\acl\src\Model\Table\PermissionsTable.php, line 100
+Acl\Adapter\DbAcl::check() - ROOT\Vendor\cakephp\acl\src\Adapter\DbAcl.php, line 80
+Acl\Controller\Component\AclComponent::check() - ROOT\Vendor\cakephp\acl\src\Controller\Component\AclComponent.php, line 120
+App\View\Helper\AclHelper::check() - APP/View\Helper\AclHelper.php, line 66
+include - APP/Template\Element\aside\sidebar-menu.ctp, line 6
+Cake\View\View::_evaluate() - ROOT\Vendor\cakephp\cakephp\src\View\View.php, line 1203
+Cake\View\View::_render() - ROOT\Vendor\cakephp\cakephp\src\View\View.php, line 1164
+Cake\View\View::_renderElement() - ROOT\Vendor\cakephp\cakephp\src\View\View.php, line 1561
+Cake\View\View::element() - ROOT\Vendor\cakephp\cakephp\src\View\View.php, line 675
+include - APP/Template\Element\aside-main-sidebar.ctp, line 17
+Cake\View\View::_evaluate() - ROOT\Vendor\cakephp\cakephp\src\View\View.php, line 1203
+Cake\View\View::_render() - ROOT\Vendor\cakephp\cakephp\src\View\View.php, line 1164
+Cake\View\View::_renderElement() - ROOT\Vendor\cakephp\cakephp\src\View\View.php, line 1561
+Cake\View\View::element() - ROOT\Vendor\cakephp\cakephp\src\View\View.php, line 675
+include - APP/Template\Layout\default.ctp, line 20
+Cake\View\View::_evaluate() - ROOT\Vendor\cakephp\cakephp\src\View\View.php, line 1203
+Cake\View\View::_render() - ROOT\Vendor\cakephp\cakephp\src\View\View.php, line 1164
+Cake\View\View::renderLayout() - ROOT\Vendor\cakephp\cakephp\src\View\View.php, line 819
+Cake\View\View::render() - ROOT\Vendor\cakephp\cakephp\src\View\View.php, line 777
+Cake\Controller\Controller::render() - ROOT\Vendor\cakephp\cakephp\src\Controller\Controller.php, line 623
+Cake\Http\ActionDispatcher::_invoke() - ROOT\Vendor\cakephp\cakephp\src\Http\ActionDispatcher.php, line 125
+Cake\Http\ActionDispatcher::dispatch() - ROOT\Vendor\cakephp\cakephp\src\Http\ActionDispatcher.php, line 93
+Cake\Http\BaseApplication::__invoke() - ROOT\Vendor\cakephp\cakephp\src\Http\BaseApplication.php, line 108
+Cake\Http\Runner::__invoke() - ROOT\Vendor\cakephp\cakephp\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\RoutingMiddleware::__invoke() - ROOT\Vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php, line 104
+Cake\Http\Runner::__invoke() - ROOT\Vendor\cakephp\cakephp\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\AssetMiddleware::__invoke() - ROOT\Vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php, line 88
+Cake\Http\Runner::__invoke() - ROOT\Vendor\cakephp\cakephp\src\Http\Runner.php, line 65
+Cake\Error\Middleware\ErrorHandlerMiddleware::__invoke() - ROOT\Vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php, line 98
+Cake\Http\Runner::__invoke() - ROOT\Vendor\cakephp\cakephp\src\Http\Runner.php, line 65
+DebugKit\Middleware\DebugKitMiddleware::__invoke() - ROOT\Vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php, line 52
+Cake\Http\Runner::__invoke() - ROOT\Vendor\cakephp\cakephp\src\Http\Runner.php, line 65
+Cake\Http\Runner::run() - ROOT\Vendor\cakephp\cakephp\src\Http\Runner.php, line 51
+Cake\Http\Server::run() - ROOT\Vendor\cakephp\cakephp\src\Http\Server.php, line 81
+[main] - ROOT\webroot\index.php, line 40
+
+
+

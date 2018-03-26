@@ -1,6 +1,13 @@
     <!-- sidebar menu -->
-	<!--
-    <div class="">
+ <?php
+     if ($this->Acl->check(['controller' => 'Campanias', 'action' => '*'])) {
+         echo 'Menú a Campañas';
+     } else {
+         echo 'No está autorizado a ingresar a Campañas';
+     }  ?>
+
+ <!-- < ? = $this->Acl->link('Link title', ['controller' =>'origenes', 'action' => 'add'], ['escape' => true]) ? > -->
+<!--    <div class="">
         <div id="sidebar-menu" class="main_menu_side hidden-print main_menu">
             <div class="menu_section">
                 <h3>General</h3>
