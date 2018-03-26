@@ -20,3 +20,39 @@
     "created": "2018-02-16T09:19:46+00:00",
     "modified": "2018-02-16T17:53:28+00:00"
 }
+2018-03-26 13:14:09 Notice: Notice (8): Array to string conversion in [C:\Plataforma\Vendor\ivanamat\cakephp3-aclmanager\src\Controller\AclController.php, line 88]
+Request URL: /admin/AclManager
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - ROOT\Vendor\cakephp\cakephp\src\Error\BaseErrorHandler.php, line 153
+AclManager\Controller\AclController::initialize() - ROOT\Vendor\ivanamat\cakephp3-aclmanager\src\Controller\AclController.php, line 88
+Cake\Controller\Controller::__construct() - ROOT\Vendor\cakephp\cakephp\src\Controller\Controller.php, line 263
+ReflectionClass::newInstance() - [internal], line ??
+Cake\Http\ControllerFactory::create() - ROOT\Vendor\cakephp\cakephp\src\Http\ControllerFactory.php, line 45
+Cake\Http\ActionDispatcher::dispatch() - ROOT\Vendor\cakephp\cakephp\src\Http\ActionDispatcher.php, line 90
+Cake\Http\BaseApplication::__invoke() - ROOT\Vendor\cakephp\cakephp\src\Http\BaseApplication.php, line 108
+Cake\Http\Runner::__invoke() - ROOT\Vendor\cakephp\cakephp\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\RoutingMiddleware::__invoke() - ROOT\Vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php, line 104
+Cake\Http\Runner::__invoke() - ROOT\Vendor\cakephp\cakephp\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\AssetMiddleware::__invoke() - ROOT\Vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php, line 88
+Cake\Http\Runner::__invoke() - ROOT\Vendor\cakephp\cakephp\src\Http\Runner.php, line 65
+Cake\Error\Middleware\ErrorHandlerMiddleware::__invoke() - ROOT\Vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php, line 98
+Cake\Http\Runner::__invoke() - ROOT\Vendor\cakephp\cakephp\src\Http\Runner.php, line 65
+DebugKit\Middleware\DebugKitMiddleware::__invoke() - ROOT\Vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php, line 52
+Cake\Http\Runner::__invoke() - ROOT\Vendor\cakephp\cakephp\src\Http\Runner.php, line 65
+Cake\Http\Runner::run() - ROOT\Vendor\cakephp\cakephp\src\Http\Runner.php, line 51
+Cake\Http\Server::run() - ROOT\Vendor\cakephp\cakephp\src\Http\Server.php, line 81
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2018-03-26 13:28:13 Notice: {
+    "id": 1,
+    "group_id": 1,
+    "role_id": 1,
+    "username": "jalegre",
+    "nombre": "Javier Alegre",
+    "ruta_imagen": "user1.jpg",
+    "email": "javieralegre2003@hotmail.com",
+    "created": "2018-02-16T09:19:46+00:00",
+    "modified": "2018-02-16T17:53:28+00:00"
+}

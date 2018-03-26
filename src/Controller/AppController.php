@@ -77,7 +77,7 @@ class AppController extends Controller {
                 'element' => 'error'
             ]
         ]);
-//        $this->Auth->allow();
+        $this->Auth->allow();
 //        $this->Auth->
         /*
          * Enable the following components for recommended CakePHP security settings.
@@ -86,6 +86,6 @@ class AppController extends Controller {
         //$this->loadComponent('Security');
         //$this->loadComponent('Csrf');
     }
-    
+
 
 }

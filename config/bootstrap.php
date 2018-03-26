@@ -214,8 +214,9 @@ Type::build('timestamp')
 if (Configure::read('debug')) {
     Plugin::load('DebugKit', ['bootstrap' => true]);
 }
+Configure::write('AclManager.aros', array('Groups', 'Roles', 'Users'));
+Configure::write('AclManager.admin', true);
+
 Plugin::load('Acl', ['bootstrap' => true]);
 Plugin::load('AclManager', ['bootstrap' => true, 'routes' => true]);
 
-Configure::write('AclManager.aros', array('Groups', 'Roles', 'Users'));
-Configure::write('AclManager.admin', true);

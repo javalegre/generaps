@@ -2,18 +2,18 @@
 
 /**
  * CakePHP 3.x - Acl Manager
- * 
+ *
  * PHP version 5
- * 
+ *
  * Class AclController
  *
  * Licensed under The MIT License
  * Redistributions of files must retain the above copyright notice.
  *
  * @category CakePHP3
- * 
+ *
  * @package AclManager\Controller
- * 
+ *
  * @author Ivan Amat <dev@ivanamat.es>
  * @copyright Copyright 2016, Iván Amat
  * @license MIT http://opensource.org/licenses/MIT
@@ -32,7 +32,7 @@ use AclManager\AclExtras;
 class AclController extends AppController {
 
     protected $AclExtras;
-    
+
     /**
      * Components
      *
@@ -53,14 +53,14 @@ class AclController extends AppController {
      * @var NULL
      */
     public $model = NULL;
-    
-    
+
+
     /**
      * Initialize
      */
     public function initialize(){
         parent::initialize();
-        
+
         /**
          * Initialize ACLs
          */
@@ -68,9 +68,9 @@ class AclController extends AppController {
         $this->Acl = new AclComponent($registry, Configure::read('Acl'));
         $this->AclExtras = new AclExtras();
         $this->AclExtras->startup($this);
-        
-        $this->viewBuilder()->setLayout('aclmanager');  
-        
+
+        $this->viewBuilder()->setLayout('aclmanager');
+
         /**
          * Loading required Model
          */
@@ -86,7 +86,6 @@ class AclController extends AppController {
          */
         $aros = Configure::read('AclManager.aros');
         foreach ($aros as $aro) {
-
             $l = Configure::read("AclManager.{$aro}.limit");
             $limit = empty($l) ? 4 : $l;
             $this->paginate[$this->{$aro}->alias()] = array(
@@ -94,9 +93,9 @@ class AclController extends AppController {
                 'limit' => $limit
             );
         }
-        
+
         return null;
-        
+
     }
 
     /**
@@ -105,7 +104,7 @@ class AclController extends AppController {
     public function index() {
         $manage = Configure::read('AclManager.aros');
         $this->set(compact('manage'));
-        $this->viewBuilder()->setLayout('aclmanager');        
+        $this->viewBuilder()->setLayout('aclmanager');
     }
 
     /**
@@ -117,7 +116,7 @@ class AclController extends AppController {
             $this->Flash->error(__('Please sign in'));
             $this->redirect(['action' => 'index']);
         }
-        
+
         $this->model = $model;
 
         // Saving permissions
@@ -181,7 +180,7 @@ class AclController extends AppController {
                 $perms[str_replace('/', ':', $acoNode)][$Aro->alias() . ":" . $aroId] = $evaluate['allowed'];
             }
         }
-        
+
         $this->request->data = array('Perms' => $perms);
         $this->set('model', $model);
         $this->set('manage', Configure::read('AclManager.aros'));
@@ -196,7 +195,7 @@ class AclController extends AppController {
      * Update ACOs
      */
     public function updateAcos() {
-        
+
         $this->AclExtras->acoUpdate();
 
         $url = ($this->request->referer() == '/') ? ['plugin' => 'AclManager','controller' => 'Acl','action' => 'index'] : $this->request->referer();
@@ -220,13 +219,13 @@ class AclController extends AppController {
         $conn = ConnectionManager::get('default');
         $stmt = $conn->execute('TRUNCATE TABLE aros_acos');
         $info = $stmt->errorInfo();
-        
+
         if ($info != null && !empty($info)) {
             $this->Flash->success(__("All permissions dropped!"));
         } else {
             $this->Flash->error(__("Error while trying to drop permissions"));
         }
-        
+
         /**
          * Get  Model
          */
@@ -245,15 +244,15 @@ class AclController extends AppController {
             }
             $mCounter++;
         }
-        
+
         $this->redirect(array("action" => "permissions"));
     }
-    
+
     /**
      * Delete everything (ACOs and AROs)
      */
     public function drop() {
-        
+
         $conn = ConnectionManager::get('default');
 
         $stmt1 = $conn->execute('TRUNCATE TABLE aros_acos');
@@ -264,7 +263,7 @@ class AclController extends AppController {
                 $this->Flash->error($info1);
             }
         }
-        
+
         $stmt2 = $conn->execute('TRUNCATE TABLE acos');
         $info2 = $stmt2->errorInfo();
         if ($info2[1] != null) {
@@ -273,7 +272,7 @@ class AclController extends AppController {
                 $this->Flash->error($info2);
             }
         }
-        
+
         $stmt3 = $conn->execute('TRUNCATE TABLE aros');
         $info3 = $stmt3->errorInfo();
         if ($info3[1] != null) {
@@ -286,15 +285,15 @@ class AclController extends AppController {
         $this->Flash->success(__("ACOs and AROs have been dropped."));
         $this->redirect(["action" => "index"]);
     }
-    
+
     /**
      * Delete everything (ACOs and AROs)
-     * 
+     *
      * TODO: Check $stmt->errorInfo();
      */
     public function defaults() {
         $conn = ConnectionManager::get('default');
-        
+
         $stmt1 = $conn->execute('TRUNCATE TABLE aros_acos');
         $info1 = $stmt1->errorInfo();
         if ($info1[1] != null) {
@@ -303,7 +302,7 @@ class AclController extends AppController {
                 $this->Flash->error($info1);
             }
         }
-        
+
         $stmt2 = $conn->execute('TRUNCATE TABLE acos');
         $info2 = $stmt2->errorInfo();
         if ($info2[1] != null) {
@@ -312,7 +311,7 @@ class AclController extends AppController {
                 $this->Flash->error($info2);
             }
         }
-        
+
         $stmt3 = $conn->execute('TRUNCATE TABLE aros');
         $info3 = $stmt3->errorInfo();
         if ($info3[1] != null) {
@@ -324,7 +323,7 @@ class AclController extends AppController {
 
         $this->Flash->success(__("ACOs and AROs have been dropped"));
 
-        
+
         /**
          * ARO Sync
          */
@@ -336,7 +335,7 @@ class AclController extends AppController {
          * ACO Sync
          */
         $this->AclExtras->acoUpdate();
-        
+
         /**
          * Get  Model
          */
@@ -355,7 +354,7 @@ class AclController extends AppController {
             }
             $mCounter++;
         }
-        
+
         $this->Flash->success(__("Congratulations! Everything has been restored by default!"));
         $this->redirect(["action" => "index"]);
     }
@@ -364,9 +363,9 @@ class AclController extends AppController {
      * Recursive function to find permissions avoiding slow $this->Acl->check().
      */
     private function _evaluate_permissions($permKeys, $aro, $aco, $aco_index) {
-        
-     
-        
+
+
+
         $this->acoId = $aco['Aco']['id'];
         $result = $this->Acl->Aro->find('all', [
                     'contain' => ['Permissions' => function ($q) {
@@ -380,7 +379,7 @@ class AclController extends AppController {
                         ])->toArray();
 
 //        die(debug($result));
-        
+
         $permissions = array_shift($result);
         $permissions = array_shift($permissions->permissions);
 
@@ -423,7 +422,7 @@ class AclController extends AppController {
                 );
             } else {
                 /**
-                 * Do not use Set::extract here. First of all it is terribly slow, 
+                 * Do not use Set::extract here. First of all it is terribly slow,
                  * besides this we need the aco array index ($key) to cache are result.
                  */
                 foreach ($this->acos as $key => $a) {
@@ -473,7 +472,7 @@ class AclController extends AppController {
     /**
      * Returns all the ACOs including their path
      */
-    
+
     protected function _getAcos() {
         $acos = $this->Acl->Aco->find('all', array('order' => 'Acos.lft ASC', 'recursive' => -1))->toArray();
         $parents = array();
@@ -482,7 +481,7 @@ class AclController extends AppController {
             $aco = & $acos[$key];
             $aco = $aco->toArray();
             $id = $aco['id'];
-            
+
             // Generate path
             if ($aco['parent_id'] && isset($parents[$aco['parent_id']])) {
                 $parents[$id] = $parents[$aco['parent_id']] . '/' . $aco['alias'];
@@ -497,7 +496,7 @@ class AclController extends AppController {
     /**
      * Returns an array with acos
      * @param Acos $acos Parse Acos entities and store into array formated
-     * @return array 
+     * @return array
      */
     private function _parseAcos($acos) {
         $cache = [];
@@ -547,7 +546,7 @@ class AclController extends AppController {
     /**
      * Returns an array with aros
      * @param Aros $aros Parse Aros entities and store into an array.
-     * @return array 
+     * @return array
      */
     private function _parseAros($aros) {
         $cache = array();

@@ -1460,3 +1460,518 @@ Stack Trace:
 #15 {main}
 
 
+2018-03-26 13:04:36 Error: [Cake\Core\Exception\Exception] AclNode::node() - Couldn't find Aros node identified by "Array
+(
+    [Aros0.model] => Users
+    [Aros0.foreign_key] => 1
+)
+"
+Request URL: /
+Referer URL: http://www.plataforma.com/users/login
+Stack Trace:
+#0 C:\Plataforma\Vendor\cakephp\acl\src\Model\Table\PermissionsTable.php(64): Acl\Model\Table\AclNodesTable->node(Array)
+#1 C:\Plataforma\Vendor\cakephp\acl\src\Adapter\DbAcl.php(80): Acl\Model\Table\PermissionsTable->check(Array, 'controllers/Ini...', '*')
+#2 C:\Plataforma\Vendor\cakephp\acl\src\Controller\Component\AclComponent.php(120): Acl\Adapter\DbAcl->check(Array, 'controllers/Ini...', '*')
+#3 C:\Plataforma\Vendor\cakephp\acl\src\Auth\ActionsAuthorize.php(41): Acl\Controller\Component\AclComponent->check(Array, 'controllers/Ini...')
+#4 C:\Plataforma\Vendor\cakephp\cakephp\src\Controller\Component\AuthComponent.php(534): Acl\Auth\ActionsAuthorize->authorize(Array, Object(Cake\Http\ServerRequest))
+#5 C:\Plataforma\Vendor\cakephp\cakephp\src\Controller\Component\AuthComponent.php(317): Cake\Controller\Component\AuthComponent->isAuthorized(Array)
+#6 C:\Plataforma\Vendor\cakephp\cakephp\src\Controller\Component\AuthComponent.php(268): Cake\Controller\Component\AuthComponent->authCheck(Object(Cake\Event\Event))
+#7 C:\Plataforma\Vendor\cakephp\cakephp\src\Event\EventManager.php(416): Cake\Controller\Component\AuthComponent->startup(Object(Cake\Event\Event))
+#8 C:\Plataforma\Vendor\cakephp\cakephp\src\Event\EventManager.php(393): Cake\Event\EventManager->_callListener(Array, Object(Cake\Event\Event))
+#9 C:\Plataforma\Vendor\cakephp\cakephp\src\Event\EventDispatcherTrait.php(110): Cake\Event\EventManager->dispatch(Object(Cake\Event\Event))
+#10 C:\Plataforma\Vendor\cakephp\cakephp\src\Controller\Controller.php(506): Cake\Controller\Controller->dispatchEvent('Controller.star...')
+#11 C:\Plataforma\Vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(114): Cake\Controller\Controller->startupProcess()
+#12 C:\Plataforma\Vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(93): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\IniciosController))
+#13 C:\Plataforma\Vendor\cakephp\cakephp\src\Http\BaseApplication.php(108): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#14 C:\Plataforma\Vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#15 C:\Plataforma\Vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(104): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#16 C:\Plataforma\Vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#17 C:\Plataforma\Vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#18 C:\Plataforma\Vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#19 C:\Plataforma\Vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#20 C:\Plataforma\Vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#21 C:\Plataforma\Vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(52): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#22 C:\Plataforma\Vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#23 C:\Plataforma\Vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#24 C:\Plataforma\Vendor\cakephp\cakephp\src\Http\Server.php(81): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#25 C:\Plataforma\webroot\index.php(40): Cake\Http\Server->run()
+#26 {main}
+
+
+2018-03-26 13:06:00 Error: [Cake\Core\Exception\Exception] AclNode::node() - Couldn't find Aros node identified by "Array
+(
+    [Aros0.model] => Users
+    [Aros0.foreign_key] => 1
+)
+"
+Request URL: /
+Stack Trace:
+#0 C:\Plataforma\Vendor\cakephp\acl\src\Model\Table\PermissionsTable.php(64): Acl\Model\Table\AclNodesTable->node(Array)
+#1 C:\Plataforma\Vendor\cakephp\acl\src\Adapter\DbAcl.php(80): Acl\Model\Table\PermissionsTable->check(Array, 'controllers/Ini...', '*')
+#2 C:\Plataforma\Vendor\cakephp\acl\src\Controller\Component\AclComponent.php(120): Acl\Adapter\DbAcl->check(Array, 'controllers/Ini...', '*')
+#3 C:\Plataforma\Vendor\cakephp\acl\src\Auth\ActionsAuthorize.php(41): Acl\Controller\Component\AclComponent->check(Array, 'controllers/Ini...')
+#4 C:\Plataforma\Vendor\cakephp\cakephp\src\Controller\Component\AuthComponent.php(534): Acl\Auth\ActionsAuthorize->authorize(Array, Object(Cake\Http\ServerRequest))
+#5 C:\Plataforma\Vendor\cakephp\cakephp\src\Controller\Component\AuthComponent.php(317): Cake\Controller\Component\AuthComponent->isAuthorized(Array)
+#6 C:\Plataforma\Vendor\cakephp\cakephp\src\Controller\Component\AuthComponent.php(268): Cake\Controller\Component\AuthComponent->authCheck(Object(Cake\Event\Event))
+#7 C:\Plataforma\Vendor\cakephp\cakephp\src\Event\EventManager.php(416): Cake\Controller\Component\AuthComponent->startup(Object(Cake\Event\Event))
+#8 C:\Plataforma\Vendor\cakephp\cakephp\src\Event\EventManager.php(393): Cake\Event\EventManager->_callListener(Array, Object(Cake\Event\Event))
+#9 C:\Plataforma\Vendor\cakephp\cakephp\src\Event\EventDispatcherTrait.php(110): Cake\Event\EventManager->dispatch(Object(Cake\Event\Event))
+#10 C:\Plataforma\Vendor\cakephp\cakephp\src\Controller\Controller.php(506): Cake\Controller\Controller->dispatchEvent('Controller.star...')
+#11 C:\Plataforma\Vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(114): Cake\Controller\Controller->startupProcess()
+#12 C:\Plataforma\Vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(93): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\IniciosController))
+#13 C:\Plataforma\Vendor\cakephp\cakephp\src\Http\BaseApplication.php(108): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#14 C:\Plataforma\Vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#15 C:\Plataforma\Vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(104): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#16 C:\Plataforma\Vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#17 C:\Plataforma\Vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#18 C:\Plataforma\Vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#19 C:\Plataforma\Vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#20 C:\Plataforma\Vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#21 C:\Plataforma\Vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(52): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#22 C:\Plataforma\Vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#23 C:\Plataforma\Vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#24 C:\Plataforma\Vendor\cakephp\cakephp\src\Http\Server.php(81): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#25 C:\Plataforma\webroot\index.php(40): Cake\Http\Server->run()
+#26 {main}
+
+
+2018-03-26 13:06:07 Error: [Cake\Core\Exception\Exception] AclNode::node() - Couldn't find Aros node identified by "Array
+(
+    [Aros0.model] => Users
+    [Aros0.foreign_key] => 1
+)
+"
+Request URL: /
+Stack Trace:
+#0 C:\Plataforma\Vendor\cakephp\acl\src\Model\Table\PermissionsTable.php(64): Acl\Model\Table\AclNodesTable->node(Array)
+#1 C:\Plataforma\Vendor\cakephp\acl\src\Adapter\DbAcl.php(80): Acl\Model\Table\PermissionsTable->check(Array, 'controllers/Ini...', '*')
+#2 C:\Plataforma\Vendor\cakephp\acl\src\Controller\Component\AclComponent.php(120): Acl\Adapter\DbAcl->check(Array, 'controllers/Ini...', '*')
+#3 C:\Plataforma\Vendor\cakephp\acl\src\Auth\ActionsAuthorize.php(41): Acl\Controller\Component\AclComponent->check(Array, 'controllers/Ini...')
+#4 C:\Plataforma\Vendor\cakephp\cakephp\src\Controller\Component\AuthComponent.php(534): Acl\Auth\ActionsAuthorize->authorize(Array, Object(Cake\Http\ServerRequest))
+#5 C:\Plataforma\Vendor\cakephp\cakephp\src\Controller\Component\AuthComponent.php(317): Cake\Controller\Component\AuthComponent->isAuthorized(Array)
+#6 C:\Plataforma\Vendor\cakephp\cakephp\src\Controller\Component\AuthComponent.php(268): Cake\Controller\Component\AuthComponent->authCheck(Object(Cake\Event\Event))
+#7 C:\Plataforma\Vendor\cakephp\cakephp\src\Event\EventManager.php(416): Cake\Controller\Component\AuthComponent->startup(Object(Cake\Event\Event))
+#8 C:\Plataforma\Vendor\cakephp\cakephp\src\Event\EventManager.php(393): Cake\Event\EventManager->_callListener(Array, Object(Cake\Event\Event))
+#9 C:\Plataforma\Vendor\cakephp\cakephp\src\Event\EventDispatcherTrait.php(110): Cake\Event\EventManager->dispatch(Object(Cake\Event\Event))
+#10 C:\Plataforma\Vendor\cakephp\cakephp\src\Controller\Controller.php(506): Cake\Controller\Controller->dispatchEvent('Controller.star...')
+#11 C:\Plataforma\Vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(114): Cake\Controller\Controller->startupProcess()
+#12 C:\Plataforma\Vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(93): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\IniciosController))
+#13 C:\Plataforma\Vendor\cakephp\cakephp\src\Http\BaseApplication.php(108): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#14 C:\Plataforma\Vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#15 C:\Plataforma\Vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(104): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#16 C:\Plataforma\Vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#17 C:\Plataforma\Vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#18 C:\Plataforma\Vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#19 C:\Plataforma\Vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#20 C:\Plataforma\Vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#21 C:\Plataforma\Vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(52): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#22 C:\Plataforma\Vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#23 C:\Plataforma\Vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#24 C:\Plataforma\Vendor\cakephp\cakephp\src\Http\Server.php(81): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#25 C:\Plataforma\webroot\index.php(40): Cake\Http\Server->run()
+#26 {main}
+
+
+2018-03-26 13:07:32 Error: [Cake\Core\Exception\Exception] AclNode::node() - Couldn't find Aros node identified by "Array
+(
+    [Aros0.model] => Users
+    [Aros0.foreign_key] => 1
+)
+"
+Request URL: /
+Referer URL: http://www.plataforma.com/users/login
+Stack Trace:
+#0 C:\Plataforma\Vendor\cakephp\acl\src\Model\Table\PermissionsTable.php(64): Acl\Model\Table\AclNodesTable->node(Array)
+#1 C:\Plataforma\Vendor\cakephp\acl\src\Adapter\DbAcl.php(80): Acl\Model\Table\PermissionsTable->check(Array, 'controllers/Ini...', '*')
+#2 C:\Plataforma\Vendor\cakephp\acl\src\Controller\Component\AclComponent.php(120): Acl\Adapter\DbAcl->check(Array, 'controllers/Ini...', '*')
+#3 C:\Plataforma\Vendor\cakephp\acl\src\Auth\ActionsAuthorize.php(41): Acl\Controller\Component\AclComponent->check(Array, 'controllers/Ini...')
+#4 C:\Plataforma\Vendor\cakephp\cakephp\src\Controller\Component\AuthComponent.php(534): Acl\Auth\ActionsAuthorize->authorize(Array, Object(Cake\Http\ServerRequest))
+#5 C:\Plataforma\Vendor\cakephp\cakephp\src\Controller\Component\AuthComponent.php(317): Cake\Controller\Component\AuthComponent->isAuthorized(Array)
+#6 C:\Plataforma\Vendor\cakephp\cakephp\src\Controller\Component\AuthComponent.php(268): Cake\Controller\Component\AuthComponent->authCheck(Object(Cake\Event\Event))
+#7 C:\Plataforma\Vendor\cakephp\cakephp\src\Event\EventManager.php(416): Cake\Controller\Component\AuthComponent->startup(Object(Cake\Event\Event))
+#8 C:\Plataforma\Vendor\cakephp\cakephp\src\Event\EventManager.php(393): Cake\Event\EventManager->_callListener(Array, Object(Cake\Event\Event))
+#9 C:\Plataforma\Vendor\cakephp\cakephp\src\Event\EventDispatcherTrait.php(110): Cake\Event\EventManager->dispatch(Object(Cake\Event\Event))
+#10 C:\Plataforma\Vendor\cakephp\cakephp\src\Controller\Controller.php(506): Cake\Controller\Controller->dispatchEvent('Controller.star...')
+#11 C:\Plataforma\Vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(114): Cake\Controller\Controller->startupProcess()
+#12 C:\Plataforma\Vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(93): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\IniciosController))
+#13 C:\Plataforma\Vendor\cakephp\cakephp\src\Http\BaseApplication.php(108): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#14 C:\Plataforma\Vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#15 C:\Plataforma\Vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(104): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#16 C:\Plataforma\Vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#17 C:\Plataforma\Vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#18 C:\Plataforma\Vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#19 C:\Plataforma\Vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#20 C:\Plataforma\Vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#21 C:\Plataforma\Vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(52): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#22 C:\Plataforma\Vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#23 C:\Plataforma\Vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#24 C:\Plataforma\Vendor\cakephp\cakephp\src\Http\Server.php(81): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#25 C:\Plataforma\webroot\index.php(40): Cake\Http\Server->run()
+#26 {main}
+
+
+2018-03-26 13:10:33 Warning: Warning (512): DbAcl::check() - Failed ACO node lookup in permissions check. Node references:
+Aro: Array
+(
+    [Users] => Array
+        (
+            [id] => 1
+            [group_id] => 1
+            [role_id] => 1
+            [username] => jalegre
+            [nombre] => Javier Alegre
+            [ruta_imagen] => user1.jpg
+            [email] => javieralegre2003@hotmail.com
+            [created] => Cake\I18n\FrozenTime Object
+                (
+                    [time] => 2018-02-16T09:19:46+00:00
+                    [timezone] => UTC
+                    [fixedNowTime] => 
+                )
+
+            [modified] => Cake\I18n\FrozenTime Object
+                (
+                    [time] => 2018-02-16T17:53:28+00:00
+                    [timezone] => UTC
+                    [fixedNowTime] => 
+                )
+
+        )
+
+)
+
+Aco: controllers/Inicios/inicio in [C:\Plataforma\Vendor\cakephp\acl\src\Model\Table\PermissionsTable.php, line 92]
+Request URL: /
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - ROOT\Vendor\cakephp\cakephp\src\Error\BaseErrorHandler.php, line 153
+Acl\Model\Table\PermissionsTable::check() - ROOT\Vendor\cakephp\acl\src\Model\Table\PermissionsTable.php, line 92
+Acl\Adapter\DbAcl::check() - ROOT\Vendor\cakephp\acl\src\Adapter\DbAcl.php, line 80
+Acl\Controller\Component\AclComponent::check() - ROOT\Vendor\cakephp\acl\src\Controller\Component\AclComponent.php, line 120
+Acl\Auth\ActionsAuthorize::authorize() - ROOT\Vendor\cakephp\acl\src\Auth\ActionsAuthorize.php, line 41
+Cake\Controller\Component\AuthComponent::isAuthorized() - ROOT\Vendor\cakephp\cakephp\src\Controller\Component\AuthComponent.php, line 534
+Cake\Controller\Component\AuthComponent::authCheck() - ROOT\Vendor\cakephp\cakephp\src\Controller\Component\AuthComponent.php, line 317
+Cake\Controller\Component\AuthComponent::startup() - ROOT\Vendor\cakephp\cakephp\src\Controller\Component\AuthComponent.php, line 268
+Cake\Event\EventManager::_callListener() - ROOT\Vendor\cakephp\cakephp\src\Event\EventManager.php, line 416
+Cake\Event\EventManager::dispatch() - ROOT\Vendor\cakephp\cakephp\src\Event\EventManager.php, line 393
+Cake\Controller\Controller::dispatchEvent() - ROOT\Vendor\cakephp\cakephp\src\Event\EventDispatcherTrait.php, line 110
+Cake\Controller\Controller::startupProcess() - ROOT\Vendor\cakephp\cakephp\src\Controller\Controller.php, line 506
+Cake\Http\ActionDispatcher::_invoke() - ROOT\Vendor\cakephp\cakephp\src\Http\ActionDispatcher.php, line 114
+Cake\Http\ActionDispatcher::dispatch() - ROOT\Vendor\cakephp\cakephp\src\Http\ActionDispatcher.php, line 93
+Cake\Http\BaseApplication::__invoke() - ROOT\Vendor\cakephp\cakephp\src\Http\BaseApplication.php, line 108
+Cake\Http\Runner::__invoke() - ROOT\Vendor\cakephp\cakephp\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\RoutingMiddleware::__invoke() - ROOT\Vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php, line 104
+Cake\Http\Runner::__invoke() - ROOT\Vendor\cakephp\cakephp\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\AssetMiddleware::__invoke() - ROOT\Vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php, line 88
+Cake\Http\Runner::__invoke() - ROOT\Vendor\cakephp\cakephp\src\Http\Runner.php, line 65
+Cake\Error\Middleware\ErrorHandlerMiddleware::__invoke() - ROOT\Vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php, line 98
+Cake\Http\Runner::__invoke() - ROOT\Vendor\cakephp\cakephp\src\Http\Runner.php, line 65
+DebugKit\Middleware\DebugKitMiddleware::__invoke() - ROOT\Vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php, line 52
+Cake\Http\Runner::__invoke() - ROOT\Vendor\cakephp\cakephp\src\Http\Runner.php, line 65
+Cake\Http\Runner::run() - ROOT\Vendor\cakephp\cakephp\src\Http\Runner.php, line 51
+Cake\Http\Server::run() - ROOT\Vendor\cakephp\cakephp\src\Http\Server.php, line 81
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2018-03-26 13:10:34 Warning: Warning (512): Unable to emit headers. Headers sent in file=C:\Plataforma\Vendor\cakephp\cakephp\src\Error\Debugger.php line=850 in [C:\Plataforma\Vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 48]
+Request URL: /
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - ROOT\Vendor\cakephp\cakephp\src\Error\BaseErrorHandler.php, line 153
+Cake\Http\ResponseEmitter::emit() - ROOT\Vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 48
+Cake\Http\Server::emit() - ROOT\Vendor\cakephp\cakephp\src\Http\Server.php, line 106
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2018-03-26 13:10:34 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at C:\Plataforma\Vendor\cakephp\cakephp\src\Error\Debugger.php:850) in [C:\Plataforma\Vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 149]
+Request URL: /
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - ROOT\Vendor\cakephp\cakephp\src\Error\BaseErrorHandler.php, line 153
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitStatusLine() - ROOT\Vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 149
+Cake\Http\ResponseEmitter::emit() - ROOT\Vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 54
+Cake\Http\Server::emit() - ROOT\Vendor\cakephp\cakephp\src\Http\Server.php, line 106
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2018-03-26 13:10:34 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at C:\Plataforma\Vendor\cakephp\cakephp\src\Error\Debugger.php:850) in [C:\Plataforma\Vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 181]
+Request URL: /
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - ROOT\Vendor\cakephp\cakephp\src\Error\BaseErrorHandler.php, line 153
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() - ROOT\Vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 181
+Cake\Http\ResponseEmitter::emit() - ROOT\Vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 55
+Cake\Http\Server::emit() - ROOT\Vendor\cakephp\cakephp\src\Http\Server.php, line 106
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2018-03-26 13:10:34 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at C:\Plataforma\Vendor\cakephp\cakephp\src\Error\Debugger.php:850) in [C:\Plataforma\Vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 181]
+Request URL: /
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - ROOT\Vendor\cakephp\cakephp\src\Error\BaseErrorHandler.php, line 153
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() - ROOT\Vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 181
+Cake\Http\ResponseEmitter::emit() - ROOT\Vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 55
+Cake\Http\Server::emit() - ROOT\Vendor\cakephp\cakephp\src\Http\Server.php, line 106
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2018-03-26 13:10:34 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at C:\Plataforma\Vendor\cakephp\cakephp\src\Error\Debugger.php:850) in [C:\Plataforma\Vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 181]
+Request URL: /
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - ROOT\Vendor\cakephp\cakephp\src\Error\BaseErrorHandler.php, line 153
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() - ROOT\Vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 181
+Cake\Http\ResponseEmitter::emit() - ROOT\Vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 55
+Cake\Http\Server::emit() - ROOT\Vendor\cakephp\cakephp\src\Http\Server.php, line 106
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2018-03-26 13:10:54 Error: Fatal Error (1): Call to a member function alias() on boolean in [C:\Plataforma\Vendor\ivanamat\cakephp3-aclmanager\src\Controller\AclController.php, line 92]
+Request URL: /admin/AclManager
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - ROOT\Vendor\cakephp\cakephp\src\Error\BaseErrorHandler.php, line 223
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - ROOT\Vendor\cakephp\cakephp\src\Error\BaseErrorHandler.php, line 105
+[main] - [internal], line ??
+
+
+
+2018-03-26 13:10:54 Warning: Headers already sent in C:\Plataforma\Vendor\ivanamat\cakephp3-aclmanager\src\Controller\AclController.php:92
+2018-03-26 13:10:54 Error: [Cake\Error\FatalErrorException] Call to a member function alias() on boolean in C:\Plataforma\Vendor\ivanamat\cakephp3-aclmanager\src\Controller\AclController.php on line 92
+Request URL: /admin/AclManager
+Stack Trace:
+#0 C:\Plataforma\Vendor\cakephp\cakephp\src\Error\BaseErrorHandler.php(105): Cake\Error\BaseErrorHandler->handleFatalError(1, 'Call to a membe...', 'C:\\Plataforma\\V...', 92)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2018-03-26 13:10:57 Warning: Warning (512): DbAcl::check() - Failed ACO node lookup in permissions check. Node references:
+Aro: Array
+(
+    [Users] => Array
+        (
+            [id] => 1
+            [group_id] => 1
+            [role_id] => 1
+            [username] => jalegre
+            [nombre] => Javier Alegre
+            [ruta_imagen] => user1.jpg
+            [email] => javieralegre2003@hotmail.com
+            [created] => Cake\I18n\FrozenTime Object
+                (
+                    [time] => 2018-02-16T09:19:46+00:00
+                    [timezone] => UTC
+                    [fixedNowTime] => 
+                )
+
+            [modified] => Cake\I18n\FrozenTime Object
+                (
+                    [time] => 2018-02-16T17:53:28+00:00
+                    [timezone] => UTC
+                    [fixedNowTime] => 
+                )
+
+        )
+
+)
+
+Aco: controllers/Inicios/inicio in [C:\Plataforma\Vendor\cakephp\acl\src\Model\Table\PermissionsTable.php, line 92]
+Request URL: /
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - ROOT\Vendor\cakephp\cakephp\src\Error\BaseErrorHandler.php, line 153
+Acl\Model\Table\PermissionsTable::check() - ROOT\Vendor\cakephp\acl\src\Model\Table\PermissionsTable.php, line 92
+Acl\Adapter\DbAcl::check() - ROOT\Vendor\cakephp\acl\src\Adapter\DbAcl.php, line 80
+Acl\Controller\Component\AclComponent::check() - ROOT\Vendor\cakephp\acl\src\Controller\Component\AclComponent.php, line 120
+Acl\Auth\ActionsAuthorize::authorize() - ROOT\Vendor\cakephp\acl\src\Auth\ActionsAuthorize.php, line 41
+Cake\Controller\Component\AuthComponent::isAuthorized() - ROOT\Vendor\cakephp\cakephp\src\Controller\Component\AuthComponent.php, line 534
+Cake\Controller\Component\AuthComponent::authCheck() - ROOT\Vendor\cakephp\cakephp\src\Controller\Component\AuthComponent.php, line 317
+Cake\Controller\Component\AuthComponent::startup() - ROOT\Vendor\cakephp\cakephp\src\Controller\Component\AuthComponent.php, line 268
+Cake\Event\EventManager::_callListener() - ROOT\Vendor\cakephp\cakephp\src\Event\EventManager.php, line 416
+Cake\Event\EventManager::dispatch() - ROOT\Vendor\cakephp\cakephp\src\Event\EventManager.php, line 393
+Cake\Controller\Controller::dispatchEvent() - ROOT\Vendor\cakephp\cakephp\src\Event\EventDispatcherTrait.php, line 110
+Cake\Controller\Controller::startupProcess() - ROOT\Vendor\cakephp\cakephp\src\Controller\Controller.php, line 506
+Cake\Http\ActionDispatcher::_invoke() - ROOT\Vendor\cakephp\cakephp\src\Http\ActionDispatcher.php, line 114
+Cake\Http\ActionDispatcher::dispatch() - ROOT\Vendor\cakephp\cakephp\src\Http\ActionDispatcher.php, line 93
+Cake\Http\BaseApplication::__invoke() - ROOT\Vendor\cakephp\cakephp\src\Http\BaseApplication.php, line 108
+Cake\Http\Runner::__invoke() - ROOT\Vendor\cakephp\cakephp\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\RoutingMiddleware::__invoke() - ROOT\Vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php, line 104
+Cake\Http\Runner::__invoke() - ROOT\Vendor\cakephp\cakephp\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\AssetMiddleware::__invoke() - ROOT\Vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php, line 88
+Cake\Http\Runner::__invoke() - ROOT\Vendor\cakephp\cakephp\src\Http\Runner.php, line 65
+Cake\Error\Middleware\ErrorHandlerMiddleware::__invoke() - ROOT\Vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php, line 98
+Cake\Http\Runner::__invoke() - ROOT\Vendor\cakephp\cakephp\src\Http\Runner.php, line 65
+DebugKit\Middleware\DebugKitMiddleware::__invoke() - ROOT\Vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php, line 52
+Cake\Http\Runner::__invoke() - ROOT\Vendor\cakephp\cakephp\src\Http\Runner.php, line 65
+Cake\Http\Runner::run() - ROOT\Vendor\cakephp\cakephp\src\Http\Runner.php, line 51
+Cake\Http\Server::run() - ROOT\Vendor\cakephp\cakephp\src\Http\Server.php, line 81
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2018-03-26 13:10:57 Warning: Warning (512): Unable to emit headers. Headers sent in file=C:\Plataforma\Vendor\cakephp\cakephp\src\Error\Debugger.php line=850 in [C:\Plataforma\Vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 48]
+Request URL: /
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - ROOT\Vendor\cakephp\cakephp\src\Error\BaseErrorHandler.php, line 153
+Cake\Http\ResponseEmitter::emit() - ROOT\Vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 48
+Cake\Http\Server::emit() - ROOT\Vendor\cakephp\cakephp\src\Http\Server.php, line 106
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2018-03-26 13:10:57 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at C:\Plataforma\Vendor\cakephp\cakephp\src\Error\Debugger.php:850) in [C:\Plataforma\Vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 149]
+Request URL: /
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - ROOT\Vendor\cakephp\cakephp\src\Error\BaseErrorHandler.php, line 153
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitStatusLine() - ROOT\Vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 149
+Cake\Http\ResponseEmitter::emit() - ROOT\Vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 54
+Cake\Http\Server::emit() - ROOT\Vendor\cakephp\cakephp\src\Http\Server.php, line 106
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2018-03-26 13:10:57 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at C:\Plataforma\Vendor\cakephp\cakephp\src\Error\Debugger.php:850) in [C:\Plataforma\Vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 181]
+Request URL: /
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - ROOT\Vendor\cakephp\cakephp\src\Error\BaseErrorHandler.php, line 153
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() - ROOT\Vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 181
+Cake\Http\ResponseEmitter::emit() - ROOT\Vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 55
+Cake\Http\Server::emit() - ROOT\Vendor\cakephp\cakephp\src\Http\Server.php, line 106
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2018-03-26 13:10:58 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at C:\Plataforma\Vendor\cakephp\cakephp\src\Error\Debugger.php:850) in [C:\Plataforma\Vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 181]
+Request URL: /
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - ROOT\Vendor\cakephp\cakephp\src\Error\BaseErrorHandler.php, line 153
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() - ROOT\Vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 181
+Cake\Http\ResponseEmitter::emit() - ROOT\Vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 55
+Cake\Http\Server::emit() - ROOT\Vendor\cakephp\cakephp\src\Http\Server.php, line 106
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2018-03-26 13:10:58 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at C:\Plataforma\Vendor\cakephp\cakephp\src\Error\Debugger.php:850) in [C:\Plataforma\Vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 181]
+Request URL: /
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - ROOT\Vendor\cakephp\cakephp\src\Error\BaseErrorHandler.php, line 153
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() - ROOT\Vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 181
+Cake\Http\ResponseEmitter::emit() - ROOT\Vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 55
+Cake\Http\Server::emit() - ROOT\Vendor\cakephp\cakephp\src\Http\Server.php, line 106
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2018-03-26 13:11:19 Error: [Cake\View\Exception\MissingHelperException] Helper class AclHelper could not be found.
+Exception Attributes: array (
+  'class' => 'AclHelper',
+  'plugin' => NULL,
+)
+Request URL: /
+Stack Trace:
+#0 C:\Plataforma\Vendor\cakephp\cakephp\src\Core\ObjectRegistry.php(94): Cake\View\HelperRegistry->_throwMissingClassError('Acl', NULL)
+#1 C:\Plataforma\Vendor\cakephp\cakephp\src\View\HelperRegistry.php(67): Cake\Core\ObjectRegistry->load('Acl')
+#2 C:\Plataforma\Vendor\cakephp\cakephp\src\View\View.php(1094): Cake\View\HelperRegistry->__isset('Acl')
+#3 C:\Plataforma\src\Template\Inicios\inicio.ctp(45): Cake\View\View->__get('Acl')
+#4 C:\Plataforma\Vendor\cakephp\cakephp\src\View\View.php(1203): include('C:\\Plataforma\\s...')
+#5 C:\Plataforma\Vendor\cakephp\cakephp\src\View\View.php(1164): Cake\View\View->_evaluate('C:\\Plataforma\\s...', Array)
+#6 C:\Plataforma\Vendor\cakephp\cakephp\src\View\View.php(772): Cake\View\View->_render('C:\\Plataforma\\s...')
+#7 C:\Plataforma\Vendor\cakephp\cakephp\src\Controller\Controller.php(623): Cake\View\View->render(NULL, NULL)
+#8 C:\Plataforma\Vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(125): Cake\Controller\Controller->render()
+#9 C:\Plataforma\Vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(93): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\IniciosController))
+#10 C:\Plataforma\Vendor\cakephp\cakephp\src\Http\BaseApplication.php(108): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 C:\Plataforma\Vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#12 C:\Plataforma\Vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(104): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 C:\Plataforma\Vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#14 C:\Plataforma\Vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#15 C:\Plataforma\Vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#16 C:\Plataforma\Vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#17 C:\Plataforma\Vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#18 C:\Plataforma\Vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(52): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#19 C:\Plataforma\Vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#20 C:\Plataforma\Vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#21 C:\Plataforma\Vendor\cakephp\cakephp\src\Http\Server.php(81): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#22 C:\Plataforma\webroot\index.php(40): Cake\Http\Server->run()
+#23 {main}
+
+
+2018-03-26 13:11:59 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Admin could not be found.
+Exception Attributes: array (
+  'class' => 'Admin',
+  'plugin' => false,
+  'prefix' => false,
+  '_ext' => false,
+)
+Request URL: /admin/permissions
+Stack Trace:
+#0 C:\Plataforma\Vendor\cakephp\cakephp\src\Http\ControllerFactory.php(38): Cake\Http\ControllerFactory->missingController(Object(Cake\Http\ServerRequest))
+#1 C:\Plataforma\Vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(90): Cake\Http\ControllerFactory->create(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#2 C:\Plataforma\Vendor\cakephp\cakephp\src\Http\BaseApplication.php(108): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#3 C:\Plataforma\Vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#4 C:\Plataforma\Vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(104): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#5 C:\Plataforma\Vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#6 C:\Plataforma\Vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#7 C:\Plataforma\Vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#8 C:\Plataforma\Vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 C:\Plataforma\Vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 C:\Plataforma\Vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(52): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 C:\Plataforma\Vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#12 C:\Plataforma\Vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 C:\Plataforma\Vendor\cakephp\cakephp\src\Http\Server.php(81): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#14 C:\Plataforma\webroot\index.php(40): Cake\Http\Server->run()
+#15 {main}
+
+
+2018-03-26 13:12:16 Error: Fatal Error (1): Call to a member function alias() on boolean in [C:\Plataforma\Vendor\ivanamat\cakephp3-aclmanager\src\Controller\AclController.php, line 92]
+Request URL: /admin/AclManager
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - ROOT\Vendor\cakephp\cakephp\src\Error\BaseErrorHandler.php, line 223
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - ROOT\Vendor\cakephp\cakephp\src\Error\BaseErrorHandler.php, line 105
+[main] - [internal], line ??
+
+
+
+2018-03-26 13:12:17 Warning: Headers already sent in C:\Plataforma\Vendor\ivanamat\cakephp3-aclmanager\src\Controller\AclController.php:92
+2018-03-26 13:12:17 Error: [Cake\Error\FatalErrorException] Call to a member function alias() on boolean in C:\Plataforma\Vendor\ivanamat\cakephp3-aclmanager\src\Controller\AclController.php on line 92
+Request URL: /admin/AclManager
+Stack Trace:
+#0 C:\Plataforma\Vendor\cakephp\cakephp\src\Error\BaseErrorHandler.php(105): Cake\Error\BaseErrorHandler->handleFatalError(1, 'Call to a membe...', 'C:\\Plataforma\\V...', 92)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2018-03-26 13:15:06 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Admin could not be found.
+Exception Attributes: array (
+  'class' => 'Admin',
+  'plugin' => false,
+  'prefix' => false,
+  '_ext' => false,
+)
+Request URL: /admin/permissions
+Stack Trace:
+#0 C:\Plataforma\Vendor\cakephp\cakephp\src\Http\ControllerFactory.php(38): Cake\Http\ControllerFactory->missingController(Object(Cake\Http\ServerRequest))
+#1 C:\Plataforma\Vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(90): Cake\Http\ControllerFactory->create(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#2 C:\Plataforma\Vendor\cakephp\cakephp\src\Http\BaseApplication.php(108): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#3 C:\Plataforma\Vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#4 C:\Plataforma\Vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(104): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#5 C:\Plataforma\Vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#6 C:\Plataforma\Vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#7 C:\Plataforma\Vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#8 C:\Plataforma\Vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 C:\Plataforma\Vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 C:\Plataforma\Vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(52): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 C:\Plataforma\Vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#12 C:\Plataforma\Vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 C:\Plataforma\Vendor\cakephp\cakephp\src\Http\Server.php(81): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#14 C:\Plataforma\webroot\index.php(40): Cake\Http\Server->run()
+#15 {main}
+
+

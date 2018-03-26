@@ -42,7 +42,7 @@
 
 //<?php
 
-echo $this->Acl->check('5','Campanias','add');
+// echo $this->Acl->check('5','Campanias','add');
 
 //    die(debug($this->AclManager));
 //
