@@ -10,7 +10,7 @@
         <span class="count_top"><i class="fa fa-truck"></i> Camiones Descargados</span>
         <div class="count">0</div>
         <span class="count_bottom"><i class="green">0</i> toneladas <i class="green">(0%)</i></span>
-    </div>    
+    </div>
     <div class="col-md-2 col-sm-4 col-xs-6 tile_stats_count">
         <span class="count_top"><i class="fa fa-chevron-down"></i> Cantidad Tn Descargadas</span>
         <div class="count">0</div>
@@ -31,7 +31,7 @@
         <div class="count"><i class="red">0 </i></div>
         <span class="count_bottom"><i class="red">0 </i> tn Recibidas</span>
     </div>
-    <!-- 
+    <!--
   <div class="col-md-2 col-sm-4 col-xs-6 tile_stats_count">
     <span class="count_top"><i class="fa fa-user"></i> Total Connections</span>
     <div class="count">7,325</div>
@@ -40,12 +40,12 @@
 </div>
 <!-- /top tiles -->
 
-//<?php 
+//<?php
 
-echo $this->AclManager->check('5','Campanias','add');
+echo $this->Acl->check('5','Campanias','add');
 
-//    die(debug($this->AclManager));  
-//    
+//    die(debug($this->AclManager));
+//
 //    ?>
 
 <div class="row">
@@ -61,7 +61,7 @@ echo $this->AclManager->check('5','Campanias','add');
         <h2>Descargas por Variedades</h2>
         <div class="clearfix"></div>
       </div>
-       
+
       <div class="x_content">
         <div class="widget_summary">
           <div class="w_left w_25">
