@@ -2,11 +2,13 @@
 $baseDir = dirname(dirname(__FILE__));
 return [
     'plugins' => [
-        'Acl' => $baseDir . '/vendor/cakephp/acl/',
-        'AclManager' => $baseDir . '/vendor/ivanamat/cakephp3-aclmanager/',
-        'Bake' => $baseDir . '/vendor/cakephp/bake/',
-        'DebugKit' => $baseDir . '/vendor/cakephp/debug_kit/',
-        'Migrations' => $baseDir . '/vendor/cakephp/migrations/',
-        'WyriHaximus/TwigView' => $baseDir . '/vendor/wyrihaximus/twig-view/'
+        'Acl' => $baseDir . '/Vendor/cakephp/acl/',
+        'AclManager' => $baseDir . '/Vendor/ivanamat/cakephp3-aclmanager/',
+        'AuditStash' => $baseDir . '/Vendor/lorenzo/audit-stash/',
+        'Bake' => $baseDir . '/Vendor/cakephp/bake/',
+        'Cake/ElasticSearch' => $baseDir . '/Vendor/cakephp/elastic-search/',
+        'DebugKit' => $baseDir . '/Vendor/cakephp/debug_kit/',
+        'Migrations' => $baseDir . '/Vendor/cakephp/migrations/',
+        'WyriHaximus/TwigView' => $baseDir . '/Vendor/wyrihaximus/twig-view/'
     ]
 ];

@@ -1,6 +1,6 @@
 
 <!-- top tiles demo-->
-<div class="row tile_count">
+<!--<div class="row tile_count">
     <div class="col-md-2 col-sm-4 col-xs-6 tile_stats_count">
         <span class="count_top"><i class="fa fa-truck"></i> Camiones Despachados</span>
         <div class="count">0</div>
@@ -30,7 +30,7 @@
         <span class="count_top"><i class="fa fa-exclamation"></i> Arroz Colorado</span>
         <div class="count"><i class="red">0 </i></div>
         <span class="count_bottom"><i class="red">0 </i> tn Recibidas</span>
-    </div>
+    </div>-->
     <!--
   <div class="col-md-2 col-sm-4 col-xs-6 tile_stats_count">
     <span class="count_top"><i class="fa fa-user"></i> Total Connections</span>
@@ -59,7 +59,7 @@
 //
     ?>
 
-<div class="row">
+<!--<div class="row">
 
 
 </div>
@@ -158,7 +158,7 @@
 
       </div>
     </div>
-  </div>
+  </div>-->
 <!--
   <div class="col-md-4 col-sm-4 col-xs-12">
     <div class="x_panel tile fixed_height_320 overflow_hidden">

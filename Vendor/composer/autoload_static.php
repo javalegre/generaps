@@ -69,6 +69,10 @@ class ComposerStaticInit4d3b657cfbe16ac8d70a8b8fcb547c74
             'JsonSchema\\' => 11,
             'Jasny\\Twig\\' => 11,
         ),
+        'E' => 
+        array (
+            'Elastica\\' => 9,
+        ),
         'D' => 
         array (
             'DebugKit\\Test\\Fixture\\' => 22,
@@ -82,6 +86,7 @@ class ComposerStaticInit4d3b657cfbe16ac8d70a8b8fcb547c74
             'Composer\\CaBundle\\' => 18,
             'Composer\\' => 9,
             'Cake\\Test\\' => 10,
+            'Cake\\ElasticSearch\\' => 19,
             'Cake\\Composer\\' => 14,
             'Cake\\Chronos\\' => 13,
             'Cake\\' => 5,
@@ -94,6 +99,7 @@ class ComposerStaticInit4d3b657cfbe16ac8d70a8b8fcb547c74
         'A' => 
         array (
             'Aura\\Intl\\' => 10,
+            'AuditStash\\' => 11,
             'App\\Test\\' => 9,
             'App\\' => 4,
             'Ajgl\\Twig\\Extension\\' => 20,
@@ -113,7 +119,7 @@ class ComposerStaticInit4d3b657cfbe16ac8d70a8b8fcb547c74
         ),
         'WyriHaximus\\TwigView\\' => 
         array (
-            0 => __DIR__ . '/..' . '/wyrihaximus/twig-view/src',
+            0 => __DIR__ . '/../..' . '/vendor/wyrihaximus/twig-view/src',
         ),
         'Twig\\' => 
         array (
@@ -193,7 +199,7 @@ class ComposerStaticInit4d3b657cfbe16ac8d70a8b8fcb547c74
         ),
         'Migrations\\' => 
         array (
-            0 => __DIR__ . '/..' . '/cakephp/migrations/src',
+            0 => __DIR__ . '/../..' . '/vendor/cakephp/migrations/src',
         ),
         'M1\\Env\\' => 
         array (
@@ -207,13 +213,17 @@ class ComposerStaticInit4d3b657cfbe16ac8d70a8b8fcb547c74
         array (
             0 => __DIR__ . '/..' . '/jasny/twig-extensions/src',
         ),
+        'Elastica\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/ruflin/elastica/lib/Elastica',
+        ),
         'DebugKit\\Test\\Fixture\\' => 
         array (
-            0 => __DIR__ . '/..' . '/cakephp/debug_kit/tests/Fixture',
+            0 => __DIR__ . '/../..' . '/vendor/cakephp/debug_kit/tests/Fixture',
         ),
         'DebugKit\\' => 
         array (
-            0 => __DIR__ . '/..' . '/cakephp/debug_kit/src',
+            0 => __DIR__ . '/../..' . '/vendor/cakephp/debug_kit/src',
         ),
         'Composer\\Spdx\\' => 
         array (
@@ -237,7 +247,11 @@ class ComposerStaticInit4d3b657cfbe16ac8d70a8b8fcb547c74
         ),
         'Cake\\Test\\' => 
         array (
-            0 => __DIR__ . '/..' . '/cakephp/cakephp/tests',
+            0 => __DIR__ . '/../..' . '/vendor/cakephp/cakephp/tests',
+        ),
+        'Cake\\ElasticSearch\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/vendor/cakephp/elastic-search/src',
         ),
         'Cake\\Composer\\' => 
         array (
@@ -257,11 +271,15 @@ class ComposerStaticInit4d3b657cfbe16ac8d70a8b8fcb547c74
         ),
         'Bake\\' => 
         array (
-            0 => __DIR__ . '/..' . '/cakephp/bake/src',
+            0 => __DIR__ . '/../..' . '/vendor/cakephp/bake/src',
         ),
         'Aura\\Intl\\' => 
         array (
             0 => __DIR__ . '/..' . '/aura/intl/src',
+        ),
+        'AuditStash\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/vendor/lorenzo/audit-stash/src',
         ),
         'App\\Test\\' => 
         array (
@@ -277,11 +295,11 @@ class ComposerStaticInit4d3b657cfbe16ac8d70a8b8fcb547c74
         ),
         'Acl\\' => 
         array (
-            0 => __DIR__ . '/..' . '/cakephp/acl/src',
+            0 => __DIR__ . '/../..' . '/vendor/cakephp/acl/src',
         ),
         'AclManager\\' => 
         array (
-            0 => __DIR__ . '/..' . '/ivanamat/cakephp3-aclmanager/src',
+            0 => __DIR__ . '/../..' . '/vendor/ivanamat/cakephp3-aclmanager/src',
         ),
     );
 
